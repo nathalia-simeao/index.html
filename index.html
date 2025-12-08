@@ -405,6 +405,39 @@
 </div>
 
     </div>
+
+    <style>
+    /* Garante que o botão seja o contexto posicional para a coroa */
+    .btn-timeline-year {
+        position: relative;
+        padding-top: 24px; /* espaço para a coroa aparecer acima do número */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Estilo da coroa: sempre absoluta e centralizada horizontalmente */
+    .timeline-coroa-icon {
+        position: absolute;
+        top: 6px;               /* ajuste vertical para alinhar acima do ano */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        pointer-events: none;   /* evita interferir no clique do botão */
+        display: block;         /* garante visibilidade */
+        opacity: 1;
+        transition: transform .12s ease, opacity .12s ease;
+    }
+
+    /* efeito visual ao focar/hover no botão */
+    .btn-timeline-year:focus .timeline-coroa-icon,
+    .btn-timeline-year:hover .timeline-coroa-icon {
+        transform: translateX(-50%) translateY(-2px);
+        opacity: 0.95;
+    }
+</style>
     </section>
 
     <section class="form-section py-5" id="formulario-orcamento">
@@ -940,5 +973,61 @@
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Para cada botão que declara data-has-crown="true"
+    const buttonsWithCrown = document.querySelectorAll('button[data-has-crown="true"]');
+
+    buttonsWithCrown.forEach(btn => {
+        // Tenta encontrar um <img> existente dentro do botão com a classe esperada
+        let icon = btn.querySelector('.timeline-coroa-icon');
+
+        // Se não existir, criamos e inserimos no topo do botão
+        if (!icon) {
+            const img = document.createElement('img');
+            img.className = 'timeline-coroa-icon';
+            img.alt = 'Ícone Coroa';
+            // valores default — ajuste se necessário
+            img.setAttribute('data-original-src', 'assets/coroa.svg');
+            img.setAttribute('data-hover-src', 'assets/coroacinza.svg');
+            img.src = img.getAttribute('data-original-src');
+            // inserir antes do texto para garantir posicionamento previsível
+            btn.insertBefore(img, btn.firstChild);
+            icon = img;
+        }
+
+        // garante que a imagem inicial seja a original
+        const originalSrc = icon.getAttribute('data-original-src') || icon.src || 'assets/coroa.svg';
+        const hoverSrc = icon.getAttribute('data-hover-src') || originalSrc;
+        // se src atual estiver ausente ou diferente, ajusta
+        if (!icon.src || icon.src.indexOf(originalSrc) === -1) {
+            icon.src = originalSrc;
+        }
+
+        // Funções utilitárias
+        function setHover() { icon.src = hoverSrc; }
+        function setOriginal() { icon.src = originalSrc; }
+
+        // Usar listeners no botão (mais confiável para focus/hover em acessibilidade)
+        btn.addEventListener('mouseenter', setHover);
+        btn.addEventListener('mouseleave', setOriginal);
+        btn.addEventListener('focus', setHover, true);
+        btn.addEventListener('blur', setOriginal, true);
+
+        // Suporte touch: clique alterna visual brevemente sem impedir abertura do modal
+        let touchTimeout = null;
+        btn.addEventListener('click', function () {
+            // visual feedback rápido para toque
+            setHover();
+            clearTimeout(touchTimeout);
+            touchTimeout = setTimeout(setOriginal, 600);
+        });
+    });
+
+    // Debug helper (remoção opcional): mostra no console quantas coroas foram configuradas
+    // console.info('Coroas configuradas:', buttonsWithCrown.length);
+});
+</script>
 </body>
 </html>
