@@ -172,47 +172,45 @@
     
 
     <div class="modal fade" id="produtoModal" tabindex="-1" aria-labelledby="produtoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-torcisao">
-            <div class="modal-header">
-                <h5 class="modal-title" id="produtoModalLabel">Detalhes do Produto</h5>
-            </div>
-            
-            <div class="modal-body">
-                
-                <div class="dropdown mb-4">
-                    <button class="btn btn-secondary dropdown-toggle btn-torcisao-dropdown" 
-                     type="button" 
-                     id="variationDropdown" 
-                     data-bs-toggle="dropdown" 
-                     aria-expanded="false">
-                     Selecione a Variação
-                    </button>
-                    <ul class="dropdown-menu" id="variationList" aria-labelledby="variationDropdown">
-                        </ul>
-                </div>
-                
-                <div class="text-center mb-4">
-                    <img id="productImage" src="assets/hastebaixa.webp" class="img-fluid modal-product-img" alt="Imagem da Variação">
-                </div>
-                
-                <div id="productDescription" class="modal-product-description">
-                    <p>Selecione uma variação acima para ver a descrição e a imagem.</p>
-                </div>
-                
-            </div>
-            
-            <div class="modal-footer justify-content-center">
-            <div class="col-auto"> 
-            <a href="#" id="btnVerDetalhes" class="btn btn-especificacoes-laranja btn-sm me-3" style="display: none;">
-            Ver Detalhes
-            </a>
-            </div>
-            </div>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-torcisao">
+      <div class="modal-header">
+        <h5 class="modal-title" id="produtoModalLabel">Detalhes do Produto</h5>
+      </div>
+
+      <div class="modal-body">
+        <div class="dropdown mb-4">
+          <button class="btn btn-secondary dropdown-toggle btn-torcisao-dropdown" 
+                  type="button" 
+                  id="variationDropdown" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false">
+            Selecione a Variação
+          </button>
+          <ul class="dropdown-menu" id="variationList" aria-labelledby="variationDropdown">
+          </ul>
         </div>
+
+        <div class="text-center mb-4">
+          <img id="productImage" src="assets/hastebaixa.webp" class="img-fluid modal-product-img" alt="Imagem da Variação">
+        </div>
+
+        <div id="productDescription" class="modal-product-description">
+          <p>Selecione uma variação acima para ver a descrição e a imagem.</p>
+        </div>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <div class="col-auto">
+          <!-- botão agora oculto com d-none -->
+          <a href="#" id="btnVerDetalhes" class="btn btn-especificacoes-laranja btn-sm me-3 d-none">
+            Ver Detalhes
+          </a>
+        </div>
+      </div>
     </div>
-    </div>
-    </section>
+  </div>
+</div>
 
     <section class="banner-2-social-section">
     <div class="banner-2-social-content container"> 
