@@ -89,11 +89,12 @@ main {
     display: flex;
     align-items: center;
     cursor: pointer;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 10px 0;
     transition: all 0.3s ease;
-    text-align: center;
+    text-align: left;
     position: relative;
+    width: 100%;
 }
 
 /* Estilo da letra */
@@ -102,6 +103,9 @@ main {
     font-weight: 800;
     color: var(--cor-secundaria-cinzamedio);
     transition: all 0.3s ease;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
 }
 
 .politica-item:hover .texto-letra {

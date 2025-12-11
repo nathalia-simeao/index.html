@@ -144,8 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
             primeiraFrase.textContent = texto;
             primeiraFrase.style.display = 'block';
             const rect = primeiraLetra.getBoundingClientRect();
-            primeiraFrase.style.left = `${rect.right + window.scrollX + 10}px`;
-            primeiraFrase.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (primeiraFrase.offsetHeight / 2)}px`;
+            const letraSpan = primeiraLetra.querySelector('.texto-letra');
+            const letraRect = letraSpan ? letraSpan.getBoundingClientRect() : rect;
+            primeiraFrase.style.left = `${letraRect.right + window.scrollX + 10}px`;
+            primeiraFrase.style.top = `${letraRect.top + window.scrollY + (letraRect.height / 2) - (primeiraFrase.offsetHeight / 2)}px`;
         }
     };
     
@@ -173,9 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (texto) {
                             frase.textContent = texto;
                             frase.style.display = 'block';
-                            const rect = l.getBoundingClientRect();
-                            frase.style.left = `${rect.right + window.scrollX + 10}px`;
-                            frase.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (frase.offsetHeight / 2)}px`;
+                            const letraSpan = l.querySelector('.texto-letra');
+                            const letraRect = letraSpan ? letraSpan.getBoundingClientRect() : l.getBoundingClientRect();
+                            frase.style.left = `${letraRect.right + window.scrollX + 10}px`;
+                            frase.style.top = `${letraRect.top + window.scrollY + (letraRect.height / 2) - (frase.offsetHeight / 2)}px`;
                         }
                     }
                 });
@@ -185,9 +188,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (texto) {
                     fraseHover.textContent = texto;
                     fraseHover.style.display = 'block';
-                    const rect = letra.getBoundingClientRect();
-                    fraseHover.style.left = `${rect.right + window.scrollX + 10}px`;
-                    fraseHover.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (fraseHover.offsetHeight / 2)}px`;
+                    const letraSpan = letra.querySelector('.texto-letra');
+                    const letraRect = letraSpan ? letraSpan.getBoundingClientRect() : letra.getBoundingClientRect();
+                    fraseHover.style.left = `${letraRect.right + window.scrollX + 10}px`;
+                    fraseHover.style.top = `${letraRect.top + window.scrollY + (letraRect.height / 2) - (fraseHover.offsetHeight / 2)}px`;
                 }
             }
         });
