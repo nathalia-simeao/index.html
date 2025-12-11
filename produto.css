@@ -189,6 +189,10 @@ h1.product-main-title {
     color: var(--cor-neutra-branco);
     isolation: isolate; 
     margin-bottom: 15px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
 }
 
 /* 2. Estilização dos Containers Individuais (Colunas) */
@@ -202,12 +206,22 @@ h1.product-main-title {
     justify-content: center;
     margin: 0 5px;
     padding: 8px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+.product-diferenciais-section .col-md-4:hover,
+.product-diferenciais-section .col-lg-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .product-diferenciais-section .row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 0 !important;
 }
 
 /* 3. Imagens/Ícones */
