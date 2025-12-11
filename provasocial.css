@@ -48,12 +48,24 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.banner-2-social-title:hover {
+    transform: scale(1.05);
 }
 
 .banner-2-social-subtitle {
     font-size: 1.8rem;
     font-weight: 400;
     opacity: 0.9;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.banner-2-social-subtitle:hover {
+    transform: scale(1.05);
 }
 
 .banner-2-destaque-orange {

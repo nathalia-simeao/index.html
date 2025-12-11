@@ -1,25 +1,32 @@
 /* --- ESTILOS GERAIS DA SEÇÃO FORMULÁRIO --- */
 .form-section {
-     /* Use multiple fallbacks so the form banner loads in local or varied deploy setups.
-         First try a path relative to the CSS file, then a couple of fallbacks for different bases. */
-      /* Try a different existing asset (bannerhome.png) to test if the form banner loads correctly.
-          Keep the previous bannerform fallbacks afterwards so we can confirm whether the issue
-          is the image file itself. */
-      background-image: url('./assets/bannerhome.png'), url('assets/bannerhome.png'), url('./assets/bannerform.png'), url('assets/bannerform.png'), url('../assets/bannerform.png');
-     background-repeat: no-repeat;
-     background-position: center center;
-     /* Ensure there's visible area for the banner — padding alone can collapse visuals depending on layout |
-         set a modest min-height so the background shows on small screens as well. */
-     min-height: 300px;
+    background-image: url('assets/saladeatendimento.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 300px;
     background-size: cover;
-    background-position: center;
     overflow: hidden;
     padding: 50px 0;
     position: relative;
 }
 
+.form-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/escritorio.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: 0;
+}
+
 .form-section::before {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.8); 
     content: '';
     height: 100%;
     left: 0;
