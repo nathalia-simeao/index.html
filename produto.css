@@ -298,3 +298,16 @@ h1.product-main-title {
 .carousel-control-next:hover {
     opacity: 1;
 }
+
+/* Carousel conectores - Same height for images */
+#carousel-conectores img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+    #carousel-conectores img {
+        height: 200px;
+    }
+}
