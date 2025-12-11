@@ -70,8 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 variationList.innerHTML = '';
                 productImage.src = 'assets/hastebaixa.webp'; // Imagem padrão ou placeholder
                 productImage.alt = 'Imagem da Variação'; // Alt text padrão
+                productImage.style.display = 'block'; // Mostra a imagem
                 productDescription.innerHTML = '<p>Selecione uma variação acima para ver a descrição e a imagem.</p>';
-                btnVerDetalhes.style.display = 'none'; // Esconde o botão "Ver Detalhes"
+                productDescription.style.display = 'none'; // Esconde a descrição inicial
+                btnVerDetalhes.classList.add('hidden-btn'); // Adiciona classe para esconder
                 btnVerDetalhes.href = '#'; // Reseta o link do botão
 
                 // Popula o dropdown com as variações do produto selecionado
@@ -99,9 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 variationDropdownButton.textContent = target.textContent; // Atualiza o texto do botão do dropdown
                 productImage.src = target.dataset.image; // Atualiza a imagem
                 productImage.alt = `Imagem de ${target.textContent}`; // Atualiza o alt text da imagem
+                productImage.style.display = 'block'; // Mostra a imagem
                 productDescription.innerHTML = `<p>${target.dataset.description}</p>`; // Atualiza a descrição
+                productDescription.style.display = 'block'; // Mostra a descrição
                 btnVerDetalhes.href = target.dataset.link; // Define o link do botão "Ver Detalhes"
-                btnVerDetalhes.style.display = 'block'; // Mostra o botão "Ver Detalhes"
+                btnVerDetalhes.classList.remove('hidden-btn'); // Remove a classe que esconde
             }
         });
     }

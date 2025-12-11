@@ -121,6 +121,10 @@
     width: 100% !important;
 }
 
+.btn-especificacoes-laranja.hidden-btn {
+    display: none !important;
+}
+
 .btn-especificacoes-laranja:hover {
     background-color: var(--cor-decoracao-laranja) !important;
     border-color: var(--cor-decoracao-laranja) !important;
