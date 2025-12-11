@@ -17,7 +17,18 @@
 }
 
 .btn-torcisao-laranja:hover {
-    filter: brightness(115%);
+    background-color: var(--cor-terciaria-cinzaescuro);
+    border-color: var(--cor-terciaria-cinzaescuro);
+    color: var(--cor-neutra-branco);
+}
+
+/* Remove o foco azul do campo de busca */
+.blog-hero input[type="search"]:focus,
+.blog-hero input[type="text"]:focus,
+.blog-hero .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000000;
 }
 
 .btn-torcisao-cta {
@@ -27,6 +38,13 @@
 .badge-qualidade {
     background-color: var(--cor-decoracao-laranja);
     color: var(--cor-neutra-branco);
+    text-transform: uppercase;
+}
+
+/* Todas as badges de categoria laranja com texto cinza claro */
+.post-card .badge {
+    background-color: var(--cor-decoracao-laranja) !important;
+    color: var(--cor-primaria-cinzaclaro) !important;
     text-transform: uppercase;
 }
 
@@ -96,7 +114,7 @@
 }
 
 .post-card:hover {
-    
+    transform: scale(1.02);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
     z-index: 10;
 }
@@ -149,8 +167,12 @@
 }
 
 .sidebar-link:hover {
-    color: var(--cor-decoracao-laranja);
-    text-decoration: underline;
+    color: var(--cor-decoracao-laranja) !important;
+    text-decoration: none;
+}
+
+.sidebar-list li a:hover {
+    color: var(--cor-decoracao-laranja) !important;
 }
 
 .cta-box {
@@ -186,6 +208,11 @@
     border-radius: 10px 0 10px 0 !important; 
 }
 
+[data-bs-theme="dark"] .post-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7) !important;
+}
+
 [data-bs-theme="dark"] .post-card .post-title,
 [data-bs-theme="dark"] .sidebar-link,
 [data-bs-theme="dark"] .post-card .post-summary,
@@ -199,9 +226,9 @@
 
 [data-bs-theme="dark"] .sidebar-link:hover {
     color: var(--cor-decoracao-laranja) !important;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-[data-bs-theme="dark"] .sidebar-box:hover .sidebar-link {
-     color: var(--cor-decoracao-laranja) !important;
+[data-bs-theme="dark"] .sidebar-list li a:hover {
+    color: var(--cor-decoracao-laranja) !important;
 }
