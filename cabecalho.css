@@ -311,8 +311,20 @@
 
 /* === RESPONSIVIDADE DO CABEÇALHO === */
 @media (max-width: 991.98px) {
+    .navbar-expand-lg {
+        padding: 15px 15px !important;
+    }
+    
     .navbar-brand img {
         max-height: 50px !important;
+    }
+    
+    .navbar-toggler {
+        margin-right: 0 !important;
+    }
+    
+    .container-fluidnav {
+        padding: 0 10px;
     }
     
     .navbar-nav {
