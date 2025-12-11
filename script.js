@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const produtoModal = document.getElementById('produtoModal'); // Elemento do Modal
     const variationDropdownButton = document.getElementById('variationDropdown');
     const variationList = document.getElementById('variationList');
-    const productImage = document.getElementById('productImage');
+    const productImage1 = document.getElementById('productImage1');
+    const productImage2 = document.getElementById('productImage2');
+    const productImage3 = document.getElementById('productImage3');
     const productDescription = document.getElementById('productDescription');
     const btnVerDetalhes = document.getElementById('btnVerDetalhes');
     let currentProductKey = '';
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const productData = {
             "barras-trefiladas": {
                 name: "Barras Trefiladas",
+                images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"],
                 variations: [
                     { name: "BTC - Baixo Teor de Carbono", image: "assets/barraredonda.jpg", description: "Barras de Baixo Teor de Carbono, ideais para aplicações que exigem boa soldabilidade e conformabilidade.", link: "barrabtc.html" },
                     { name: "MTC - Médio Teor de Carbono", image: "assets/barraredonda.jpg", description: "Barras de Médio Teor de Carbono, oferecendo um bom equilíbrio entre resistência e ductilidade para diversas aplicações.", link: "barramtc.html" },
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "hastes-aterramento": {
                 name: "Haste de Aterramento",
+                images: ["assets/hastebaixa.webp", "assets/hastealta.png", "assets/hastebaixa.webp"],
                 variations: [
                     { name: "Baixa Camada", image: "assets/hastebaixa.webp", description: "Haste de aterramento com baixa camada de cobre, adequada para solos com menor agressividade.", link: "hastebc.html" },
                     { name: "Alta Camada", image: "assets/hastealta.png", description: "Haste de aterramento com alta camada de cobre, ideal para maior durabilidade e resistência à corrosão em solos agressivos.", link: "hasteac.html" }
@@ -48,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "arames-trefilados": {
                 name: "Arames Trefilados",
+                images: ["assets/arame1.jpg", "assets/arame2.jpg", "assets/arame3.jpg"],
                 variations: [
                     { name: "BTC - Baixo Teor de Carbono", image: "assets/aramespider.jpg", description: "Arames de Baixo Teor de Carbono, flexíveis e fáceis de manusear, ideais para amarração e usos gerais.", link: "aramebtc.html" },
                     { name: "MTC - Médio Teor de Carbono", image: "assets/aramespider.jpg", description: "Arames de Médio Teor de Carbono, oferecendo maior resistência para aplicações que exigem mais robustez.", link: "aramemtc.html" },
@@ -66,11 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Atualiza o título do modal
                 document.getElementById('produtoModalLabel').textContent = `Detalhes do Produto - ${product.name}`;
                 // Reseta o texto do dropdown e o conteúdo do modal
-                variationDropdownButton.textContent = "Selecione a Variação";
+                variationDropdownButton.textContent = "Selecione o produto";
                 variationList.innerHTML = '';
-                productImage.src = 'assets/hastebaixa.webp'; // Imagem padrão ou placeholder
-                productImage.alt = 'Imagem da Variação'; // Alt text padrão
-                productImage.style.display = 'block'; // Mostra a imagem
+                
+                // Atualiza as 3 imagens do produto
+                if (product.images && product.images.length >= 3) {
+                    productImage1.src = product.images[0];
+                    productImage2.src = product.images[1];
+                    productImage3.src = product.images[2];
+                }
+                
                 productDescription.innerHTML = '<p>Selecione uma variação acima para ver a descrição e a imagem.</p>';
                 productDescription.style.display = 'none'; // Esconde a descrição inicial
                 btnVerDetalhes.classList.add('hidden-btn'); // Adiciona classe para esconder
@@ -99,9 +109,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (target.classList.contains('dropdown-item')) {
                 event.preventDefault(); // Previne o comportamento padrão do link
                 variationDropdownButton.textContent = target.textContent; // Atualiza o texto do botão do dropdown
-                productImage.src = target.dataset.image; // Atualiza a imagem
-                productImage.alt = `Imagem de ${target.textContent}`; // Atualiza o alt text da imagem
-                productImage.style.display = 'block'; // Mostra a imagem
+                
+                // Atualiza apenas a primeira imagem quando uma variação é selecionada
+                productImage1.src = target.dataset.image;
+                productImage1.alt = `Imagem de ${target.textContent}`;
+                
+                // Oculta as outras 2 imagens
+                productImage2.style.display = 'none';
+                productImage3.style.display = 'none';
+                
                 productDescription.innerHTML = `<p>${target.dataset.description}</p>`; // Atualiza a descrição
                 productDescription.style.display = 'block'; // Mostra a descrição
                 btnVerDetalhes.href = target.dataset.link; // Define o link do botão "Ver Detalhes"

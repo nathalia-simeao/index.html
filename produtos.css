@@ -93,8 +93,14 @@
 }
 
 .modal-product-img {
-    max-height: 200px;
-    width: auto;
+    height: 200px !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 0 10px 0;
+    display: block;
+    max-height: 200px !important;
+    min-height: 200px !important;
 }
 
 /* Estilo do botão dropdown no modal */
