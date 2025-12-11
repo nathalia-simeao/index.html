@@ -282,3 +282,19 @@ h1.product-main-title {
 @media (max-width: 767.98px) {
     .product-carousel img { max-height: 260px; }
 }
+
+/* Carousel control arrows - Orange styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(57%) sepia(95%) saturate(1547%) hue-rotate(347deg) brightness(97%) contrast(93%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
