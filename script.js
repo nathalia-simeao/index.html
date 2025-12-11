@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             "hastes-aterramento": {
                 name: "Haste de Aterramento",
-                images: ["assets/hastebaixa.webp", "assets/hastealta.png", "assets/hastebaixa.webp"],
+                images: ["assets/hastebaixa.webp", "assets/haste1.jpg", "assets/haste4.jpg"],
                 variations: [
                     { name: "Baixa Camada", image: "assets/hastebaixa.webp", description: "Haste de aterramento com baixa camada de cobre, adequada para solos com menor agressividade.", link: "hastebc.html" },
                     { name: "Alta Camada", image: "assets/hastealta.png", description: "Haste de aterramento com alta camada de cobre, ideal para maior durabilidade e resistência à corrosão em solos agressivos.", link: "hasteac.html" }
