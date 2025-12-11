@@ -124,6 +124,18 @@
     color: var(--cor-terciaria-cinzaescuro);
 }
 
+/* Estilo da descrição do produto no modal */
+#productDescription {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#productDescription p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 .btn-especificacoes-laranja {
     background-color: var(--cor-secundaria-cinzamedio);
     border: none;
