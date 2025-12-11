@@ -102,3 +102,25 @@ html {
     border-color: #F47C38;
     color: white;
 }
+/* === RESPONSIVIDADE GERAL === */
+@media (max-width: 767.98px) {
+    /* Previne overflow horizontal */
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Ajusta containers */
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Garante fonte mínima legível */
+    body, p, li, a, span {
+        font-size: max(0.875rem, 14px) !important;
+    }
+    
+    h1 { font-size: max(1.5rem, 24px) !important; }
+    h2 { font-size: max(1.3rem, 21px) !important; }
+    h3 { font-size: max(1.1rem, 18px) !important; }
+}

@@ -1,0 +1,250 @@
+/* === CORREÇÕES ADICIONAIS DE RESPONSIVIDADE === */
+
+/* MODAL RESPONSIVO */
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin: 0.5rem !important;
+    }
+    
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-body img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    #productDescription {
+        font-size: 0.9rem !important;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem !important;
+    }
+    
+    .dropdown-button {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CARDS EM 2 COLUNAS NO TABLET */
+    .product-cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product-card {
+        width: 45%;
+        max-width: 350px;
+    }
+    
+    /* Modal tablet */
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .modal-body img {
+        max-height: 300px;
+    }
+    
+    #productDescription {
+        font-size: 1rem;
+    }
+    
+    .dropdown-button {
+        font-size: 1.3rem;
+    }
+}
+
+/* BANNER RESPONSIVO */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        height: 75vh !important;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .banner-content p {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner {
+        height: 60vh !important;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .banner-content p {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* PROVA SOCIAL RESPONSIVA */
+@media (max-width: 767.98px) {
+    .prova-social-section h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .prova-social-section p {
+        font-size: 0.9rem !important;
+    }
+    
+    .prova-social-card {
+        padding: 1rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .prova-social-section h2 {
+        font-size: 2rem !important;
+    }
+    
+    .prova-social-section p {
+        font-size: 1rem !important;
+    }
+}
+
+/* LOGOS E ICONES DE PAGAMENTO */
+@media (max-width: 767.98px) {
+    .logo {
+        max-height: 40px !important;
+    }
+    
+    .payment-icons img {
+        max-width: 35px !important;
+        margin: 0.2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        max-height: 50px !important;
+    }
+    
+    .payment-icons img {
+        max-width: 45px !important;
+    }
+}
+
+/* ISO BANNER RESPONSIVO */
+@media (max-width: 767.98px) {
+    .isosection {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    .isosection h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    .isosection p {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .isosection {
+        padding: 2.5rem 1.5rem !important;
+    }
+    
+    .isosection h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* DIFERENCIAIS CARDS */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-diferenciais-section .col-md-4 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+    
+    .destaque-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* NAVEGAÇÃO DROPDOWN NO TABLET LANDSCAPE */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar-nav .dropdown-menu {
+        max-width: 250px;
+        font-size: 0.9rem;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
+
+/* FONT-SIZE MÍNIMOS PARA ACESSIBILIDADE */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 14px;
+    }
+    
+    p, li, span {
+        font-size: max(0.875rem, 14px) !important;
+    }
+    
+    h1 {
+        font-size: max(1.5rem, 24px) !important;
+    }
+    
+    h2 {
+        font-size: max(1.3rem, 20px) !important;
+    }
+    
+    h3 {
+        font-size: max(1.1rem, 18px) !important;
+    }
+}
+
+/* IMAGENS DE POST DO BLOG */
+@media (max-width: 767.98px) {
+    .blog-post-img {
+        max-height: 180px !important;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog-post-img {
+        max-height: 220px !important;
+    }
+}
+
+/* CONTAINER PADDING */
+@media (max-width: 767.98px) {
+    .container,
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* IMAGENS DE CABEÇALHO DOS PRODUTOS */
+@media (max-width: 767.98px) {
+    .product-header-img {
+        height: 150px !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-header-img {
+        height: 180px !important;
+        max-width: 350px !important;
+    }
+}

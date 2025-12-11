@@ -168,3 +168,38 @@
         margin-top: 20px;
     }
 }
+
+/* === RESPONSIVIDADE ADICIONAL DO FOOTER === */
+@media (max-width: 767.98px) {
+    .main-footer h4 {
+        font-size: 1rem !important;
+    }
+    
+    .main-footer ul li a,
+    .main-footer address a,
+    .main-footer address,
+    .main-footer p {
+        font-size: 0.85rem !important;
+    }
+    
+    .main-footer {
+        padding: 2rem 1rem !important;
+    }
+    
+    .formas-pagamento-icons img {
+        width: 50px !important;
+        height: 30px !important;
+        margin: 0.25rem !important;
+    }
+    
+    .main-footer img[alt="Torcisão Trefilados"] {
+        width: 140px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .formas-pagamento-icons img {
+        width: 60px;
+        height: 32px;
+    }
+}

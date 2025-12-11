@@ -82,6 +82,30 @@
     padding-top: 15rem !important; 
 }
 
+@media (max-width: 767.98px) {
+    .blog-container-hero {
+        padding-top: 8rem !important;
+    }
+    
+    .blog-hero h1 .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .blog-hero .blog-subtitle {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog-container-hero {
+        padding-top: 12rem !important;
+    }
+    
+    .blog-hero h1 .display-4 {
+        font-size: 2.4rem !important;
+    }
+}
+
 
 /* Título Principal (Cor) */
 .blog-hero h1 .display-4 {
@@ -231,4 +255,29 @@
 
 [data-bs-theme="dark"] .sidebar-list li a:hover {
     color: var(--cor-decoracao-laranja) !important;
+}
+
+/* === RESPONSIVIDADE ADICIONAL DO BLOG === */
+@media (max-width: 767.98px) {
+    .blog-post-card img {
+        height: 180px !important;
+    }
+    
+    .blog-post-title {
+        font-size: 1.1rem !important;
+    }
+    
+    .blog-post-excerpt {
+        font-size: 0.85rem !important;
+    }
+    
+    .sidebar {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog-post-card img {
+        height: 200px;
+    }
 }

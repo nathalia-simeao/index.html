@@ -5,7 +5,6 @@
 }
 
 .ciesp-logo {
-    filter: brightness(0.9); 
     height: 50px;
     width: auto; 
 }
@@ -19,14 +18,33 @@
     .post-footer .container {
         align-items: center !important; 
         flex-direction: column !important;
-        text-align: center;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .post-footer .ciesp-logo {
+        height: 40px;
         margin-bottom: 5px; 
     }
     
     .post-footer p.mb-2.mb-md-0 {
         margin-bottom: 5px !important; 
+    }
+    
+    .post-footer p {
+        text-align: center !important;
+    }
+}
+
+/* === RESPONSIVIDADE DO POSFOOTER === */
+@media (max-width: 767.98px) {
+    .post-footer p {
+        font-size: 0.75rem !important;
+        text-align: center !important;
+    }
+    
+    .post-footer {
+        padding: 1rem 0.5rem !important;
+        text-align: center !important;
     }
 }

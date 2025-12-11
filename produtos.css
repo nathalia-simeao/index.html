@@ -228,4 +228,92 @@ body[data-bs-theme="dark"] .btn-torcisao-dropdown {
     .btn-consultor {
         margin-top: 30px;
     }
+    
+    /* Mantém efeito hover/touch de zoom nos cards em mobile */
+    .product-card:active {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.18); 
+        transform: scale(1.03);
+        z-index: 5;
+    }
+    
+    /* Imagens do modal empilhadas e com mesma altura em mobile */
+    .modal-body .row.g-2 {
+        flex-direction: column !important;
+    }
+    
+    .modal-body .row.g-2 .col-4 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .modal-product-img {
+        width: 100% !important;
+        height: 200px !important;
+        max-height: 200px !important;
+        min-height: 200px !important;
+        object-fit: cover !important;
+        border-radius: 10px 0 10px 0 !important;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* === MODAL E CARDS TABLET === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product-card {
+        width: 45%;
+        max-width: 350px;
+    }
+    
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .modal-body img {
+        max-height: 300px;
+    }
+    
+    #productDescription {
+        font-size: 1rem;
+    }
+    
+    .dropdown-button {
+        font-size: 1.3rem;
+    }
+}
+
+/* === MODAL MOBILE === */
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin: 0.5rem !important;
+    }
+    
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-body img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    #productDescription {
+        font-size: 0.9rem !important;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem !important;
+    }
+    
+    .dropdown-button {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem;
+    }
 }

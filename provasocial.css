@@ -105,3 +105,28 @@
         padding: 0 15px;
     }
 }
+
+/* === PROVA SOCIAL RESPONSIVA === */
+@media (max-width: 767.98px) {
+    .prova-social-section h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .prova-social-section p {
+        font-size: 0.9rem !important;
+    }
+    
+    .prova-social-card {
+        padding: 1rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .prova-social-section h2 {
+        font-size: 2rem !important;
+    }
+    
+    .prova-social-section p {
+        font-size: 1rem !important;
+    }
+}

@@ -128,3 +128,67 @@
         padding: 6px 12px;
     }
 }
+
+/* === RESPONSIVIDADE BANNER === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        height: 75vh !important;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .banner-content p {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner {
+        height: 60vh !important;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .banner-content p {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Ajustes do banner-1 em mobile */
+    .banner-1-content {
+        border-left-width: 1.5px !important;
+        padding-left: 12px !important;
+        min-height: 150px !important;
+    }
+    
+    .banner-1-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .banner-1-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .banner-1-section-orange {
+        font-size: 2rem !important;
+        display: inline-block;
+    }
+    
+    .banner-1-content .container__botao-cotacao {
+        margin-left: 0 !important;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-1-content {
+        border-left-width: 4px;
+        padding-left: 15px;
+    }
+    
+    .banner-1-section-orange {
+        font-size: 2.8rem;
+    }
