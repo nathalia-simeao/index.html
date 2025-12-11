@@ -112,13 +112,14 @@
     border-radius: 0 10px 0 10px;
     color: var(--cor-neutra-branco);
     display: inline-block !important;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    max-width: 250px !important;
-    padding: 6px 14px;
+    max-width: 300px !important;
+    padding: 10px 20px;
     transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
-    width: 100% !important;
+    width: auto !important;
+    white-space: nowrap;
 }
 
 .btn-especificacoes-laranja.hidden-btn {
