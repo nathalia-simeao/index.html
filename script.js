@@ -123,35 +123,87 @@ document.addEventListener('DOMContentLoaded', () => {
     // Seleciona todas as letras que têm o atributo 'data-letra'
     const letras = document.querySelectorAll('[data-letra]');
 
-    // Cria um único elemento para mostrar a frase, que será reutilizado
-    const fraseHover = document.createElement('div');
-    fraseHover.classList.add('frase-hover'); // Aplica a classe CSS que criamos
-    document.body.appendChild(fraseHover); // Adiciona o elemento ao corpo da página
+    // Cria elementos de frase para cada letra
+    const frasesHover = [];
+    letras.forEach((letra, index) => {
+        const fraseHover = document.createElement('div');
+        fraseHover.classList.add('frase-hover');
+        if (index === 0) {
+            fraseHover.classList.add('frase-fixa'); // Primeira frase fica fixa
+        }
+        document.body.appendChild(fraseHover);
+        frasesHover.push(fraseHover);
+    });
+
+    // Função para posicionar a primeira frase
+    const posicionarPrimeiraFrase = () => {
+        const primeiraLetra = letras[0];
+        const primeiraFrase = frasesHover[0];
+        if (primeiraLetra && primeiraFrase) {
+            const texto = primeiraLetra.getAttribute('data-texto');
+            primeiraFrase.textContent = texto;
+            primeiraFrase.style.display = 'block';
+            const rect = primeiraLetra.getBoundingClientRect();
+            primeiraFrase.style.left = `${rect.right + window.scrollX + 10}px`;
+            primeiraFrase.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (primeiraFrase.offsetHeight / 2)}px`;
+        }
+    };
+    
+    // Mostra a primeira frase sempre visível
+    posicionarPrimeiraFrase();
+    
+    // Reposiciona ao redimensionar a janela ou ao fazer scroll
+    window.addEventListener('resize', posicionarPrimeiraFrase);
+    window.addEventListener('scroll', posicionarPrimeiraFrase);
 
     // Adiciona os eventos de mouse para cada letra
-    letras.forEach(letra => {
+    letras.forEach((letra, index) => {
+        const fraseHover = frasesHover[index];
+        const isUltimaLetra = index === letras.length - 1;
+        const isPrimeiraLetra = index === 0;
+
         // Evento para quando o mouse entra na letra
         letra.addEventListener('mouseenter', (event) => {
-            const texto = letra.getAttribute('data-texto'); // Pega o texto da frase
-            if (texto) {
-                fraseHover.textContent = texto; // Define o texto do balão
-                fraseHover.style.display = 'block'; // Torna o balão visível
-
-                // Calcula a posição para o balão aparecer ao lado da letra
-                const rect = letra.getBoundingClientRect();
-                fraseHover.style.left = `${rect.right + window.scrollX + 10}px`; // 10px à direita da letra
-                fraseHover.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (fraseHover.offsetHeight / 2)}px`; // Centralizado verticalmente
+            if (isUltimaLetra) {
+                // Última letra (último O) - mostra todas as frases
+                letras.forEach((l, i) => {
+                    if (i > 0) { // Não precisa reposicionar a primeira que já está fixa
+                        const texto = l.getAttribute('data-texto');
+                        const frase = frasesHover[i];
+                        if (texto) {
+                            frase.textContent = texto;
+                            frase.style.display = 'block';
+                            const rect = l.getBoundingClientRect();
+                            frase.style.left = `${rect.right + window.scrollX + 10}px`;
+                            frase.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (frase.offsetHeight / 2)}px`;
+                        }
+                    }
+                });
+            } else if (!isPrimeiraLetra) {
+                // Outras letras - comportamento normal
+                const texto = letra.getAttribute('data-texto');
+                if (texto) {
+                    fraseHover.textContent = texto;
+                    fraseHover.style.display = 'block';
+                    const rect = letra.getBoundingClientRect();
+                    fraseHover.style.left = `${rect.right + window.scrollX + 10}px`;
+                    fraseHover.style.top = `${rect.top + window.scrollY + (rect.height / 2) - (fraseHover.offsetHeight / 2)}px`;
+                }
             }
         });
 
         // Evento para quando o mouse sai da letra
         letra.addEventListener('mouseleave', () => {
-            fraseHover.style.display = 'none'; // Esconde o balão
-        });
-
-        // Opcional: se o usuário mover o mouse rápido, também escondemos
-        fraseHover.addEventListener('mouseleave', () => {
-            fraseHover.style.display = 'none';
+            if (isUltimaLetra) {
+                // Esconde todas as frases exceto a primeira
+                frasesHover.forEach((frase, i) => {
+                    if (i > 0) {
+                        frase.style.display = 'none';
+                    }
+                });
+            } else if (!isPrimeiraLetra) {
+                fraseHover.style.display = 'none';
+            }
         });
     });
     // --- Fim da Lógica para o Efeito Hover nas Letras ---

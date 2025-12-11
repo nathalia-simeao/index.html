@@ -22,7 +22,8 @@ main {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
-    padding-top: 1.5rem !important
+    padding-top: 1.5rem !important;
+    text-align: center;
 }
 
 .policy-block {
@@ -69,12 +70,8 @@ main {
 }
 
 .torcisao-grid-wrapper {
-    display: grid;
-    grid-template-columns: 150px auto; 
     max-width: 900px;
     margin: 0 auto;
-    align-items: start; 
-    column-gap: 0;
 }
 
 .lista-torcisao {
@@ -83,109 +80,63 @@ main {
     margin: 0;
     display: flex;
     flex-direction: column;
-    position: relative; 
-    text-align: center;
-    min-height: 400px;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0px;
 }
 
 /* 2. Estilização de Cada Item da Política */
 .politica-item {
     display: flex;
     align-items: center;
-    cursor: default;
+    cursor: pointer;
     justify-content: center;
-    padding: 5px 0;
-    transition: background-color 0.3s ease;
+    padding: 10px 0;
+    transition: all 0.3s ease;
     text-align: center;
+    position: relative;
 }
 
-/* 3. Estilização da Letra: Cor Base (Cinza Médio para TODOS) */
-.politica-item::before {
-    content: attr(data-letra); 
-    font-size: 4rem; 
+/* Estilo da letra */
+.politica-item .texto-letra {
+    font-size: 4rem;
     font-weight: 800;
-    margin-right: 0;
-    line-height: 1;
     color: var(--cor-secundaria-cinzamedio);
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: block;
-    text-align: center;
-    width: 100%;
+    transition: all 0.3s ease;
 }
 
-/* 4. Estilização da Área de Texto Expandido (Mantida) */
-.texto-expandido-area { 
-    position: relative; 
-    padding: 0; 
-    padding-top: 0;
-    pointer-events: none; 
-    font-size: 1.5rem;
-    line-height: 2.75rem;
-    min-height: 300px;
-    display: flex; 
-    flex-direction: column;
-    align-self: stretch;
-    transition: transform 0.3s;
-    top: 0;
+.politica-item:hover .texto-letra {
+    color: var(--cor-decoracao-laranja);
+    transform: scale(1.1);
 }
 
-.texto-expandido-area p {
-    opacity: 0;
-    transform: translateY(0);
-    transition: opacity 0.5s ease-in-out;
-    position: static !important;
-    width: 100%;
+/* Estilo do texto que aparece no hover */
+.frase-hover {
+    display: none;
+    position: absolute;
     color: var(--cor-terciaria-cinzaescuro);
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 1000;
+    white-space: nowrap;
 }
 
-.texto-expandido-area p.texto-active {
-    /* Zere qualquer margem superior que o browser possa estar aplicando */
-    margin-top: 15px; 
+.frase-hover.frase-fixa {
+    display: block !important;
 }
 
-
-/* 5. Estilos para o Hover/Ativo */
-
-.politica-item.active {
-    background-color: transparent; 
+.frase-hover::before {
+    content: none;
 }
 
-.politica-item.active::before {
-    transform: scale(1.1);
-    color: var(--cor-decoracao-laranja); 
+/* Modo escuro */
+[data-bs-theme="dark"] .politica-item .texto-letra {
+    color: var(--cor-primaria-cinzaclaro);
 }
 
-.texto-expandido-area p.texto-active span:first-child {
-    color: var(--cor-decoracao-laranja); 
+[data-bs-theme="dark"] .politica-item:hover .texto-letra {
+    color: var(--cor-decoracao-laranja);
 }
 
-.texto-expandido-area p.texto-active.primeiro-item span:first-child {
-    color: var(--cor-secundaria-cinzamedio) !important; 
-}
-
-.lista-torcisao .politica-item {
-    align-items: center;
-    height: 60px;
-}
-
-[data-bs-theme="dark"] .politica-item::before {
-    /* Mude as letras inativas para um cinza claro */
-    color: var(--cor-primaria-cinzaclaro); 
-}
-
-.texto-expandido-area p.texto-revelado {
-    /* Zere a margem superior e ajuste a margem inferior para o espaçamento entre as linhas */
-    margin-top: 16px; 
-    margin-bottom: 15px; /* Mantenha este ajuste fino */
-}
-
-/* 2. Letra Grande (Ativa/Hover - A cor laranja no modo normal) */
-[data-bs-theme="dark"] .politica-item.active::before {
-    color: var(--cor-decoracao-laranja); 
-    transform: scale(1.1);
-}
-
-[data-bs-theme="dark"] .texto-expandido-area p {
-    color: var(--dark-text-light) !important; 
+[data-bs-theme="dark"] .frase-hover {
+    color: var(--cor-primaria-cinzaclaro);
 }
