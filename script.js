@@ -36,27 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Barras Trefiladas",
                 images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"],
                 variations: [
-                    { name: "BTC - Baixo Teor de Carbono", image: "assets/barraredonda.jpg", description: "Barras de Baixo Teor de Carbono, ideais para aplicações que exigem boa soldabilidade e conformabilidade.", link: "barrabtc.html" },
-                    { name: "MTC - Médio Teor de Carbono", image: "assets/barraredonda.jpg", description: "Barras de Médio Teor de Carbono, oferecendo um bom equilíbrio entre resistência e ductilidade para diversas aplicações.", link: "barramtc.html" },
-                    { name: "ATC - Alto Teor de Carbono", image: "assets/barraredonda.jpg", description: "Conhecido como 'aço comercial', este material essencial, com seu teor variado de carbono, é o padrão da indústria devido à sua notável versatilidade. Ele combina excelente usinabilidade, soldabilidade e forjabilidade, o que simplifica o processamento e a fabricação. É a escolha robusta para inúmeras aplicações que requerem uma boa e confiável resistência mecânica, oferecendo o equilíbrio ideal entre desempenho e facilidade de manipulação.", link: "barraatc.html" },
-                    { name: "Aço Ressulfurado", image: "assets/barraredonda.jpg", description: "Barras de Aço Ressulfurado, projetadas para alta usinabilidade e acabamento superficial superior.", link: "barraacoressulfurado.html" }
+                    { name: "BTC - Baixo Teor de Carbono", images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"], description: "A barra trefilada se caracterizada por sua alta precisão dimensional, superfície lisa e acabamento superior, obtidos através de um processo a frio que melhora suas propriedades mecânicas, como resistência à tração, escoamento e dureza. Essa combinação de características a torna ideal para aplicações que exigem tolerâncias mais justas e um alto padrão de qualidade. Ideais para aplicações como por exemplo: Fixadores,  Autopeças, Cesto Metálico, Rack Metálico, Molas Helicoidais, Amortecedores e outros.", link: "barrabtc.html" },
+                    { name: "MTC - Médio Teor de Carbono", images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"], description: "Barras de Médio Teor de Carbono, oferecendo um bom equilíbrio entre resA barra trefilada se caracterizada por sua alta precisão dimensional, superfície lisa e acabamento superior, obtidos através de um processo a frio que melhora suas propriedades mecânicas, como resistência à tração, escoamento e dureza. Essa combinação de características a torna ideal para aplicações que exigem tolerâncias mais justas e um alto padrão de qualidade. Ideais para aplicações como por exemplo: Fixadores,  Autopeças, Cesto Metálico, Rack Metálico, Molas Helicoidais, Amortecedores e outros.", link: "barramtc.html" },
+                    { name: "ATC - Alto Teor de Carbono", images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"], description: "A barra trefilada se caracterizada por sua alta precisão dimensional, superfície lisa e acabamento superior, obtidos através de um processo a frio que melhora suas propriedades mecânicas, como resistência à tração, escoamento e dureza. Essa combinação de características a torna ideal para aplicações que exigem tolerâncias mais justas e um alto padrão de qualidade. Ideais para aplicações como por exemplo: Fixadores,  Autopeças, Cesto Metálico, Rack Metálico, Molas Helicoidais, Amortecedores e outros.", link: "barraatc.html" },
+                    { name: "Aço Ressulfurado", images: ["assets/barra1.jpg", "assets/barra2.webp", "assets/barra3.jpg"], description: "A barra trefilada se caracterizada por sua alta precisão dimensional, superfície lisa e acabamento superior, obtidos através de um processo a frio que melhora suas propriedades mecânicas, como resistência à tração, escoamento e dureza. Essa combinação de características a torna ideal para aplicações que exigem tolerâncias mais justas e um alto padrão de qualidade. Ideais para aplicações como por exemplo: Setor Automotivo, Pinos, Pistões, Bujões, Válvulas, Porcas, Sistemas Hidráulicos e Pneumáticos e outros.", link: "barraacoressulfurado.html" }
                 ]
             },
             "hastes-aterramento": {
                 name: "Haste de Aterramento",
                 images: ["assets/hastebaixa.webp", "assets/haste1.jpg", "assets/haste4.jpg"],
                 variations: [
-                    { name: "Baixa Camada", image: "assets/hastebaixa.webp", description: "Haste de aterramento com baixa camada de cobre, adequada para solos com menor agressividade.", link: "hastebc.html" },
-                    { name: "Alta Camada", image: "assets/hastealta.png", description: "Haste de aterramento com alta camada de cobre, ideal para maior durabilidade e resistência à corrosão em solos agressivos.", link: "hasteac.html" }
+                    { name: "Baixa Camada", images: ["assets/hastebaixa.webp", "assets/haste1.jpg", "assets/haste4.jpg"], description: "Com núcleo sólido de aço-carbono SAE 1010/1020. São revestidas com uma fina camada de 20 mícrons, mantendo a mesma qualidade e o processo do banho de alta camada.Garantem confiabilidade superior em sistemas de aterramento, oferecendo desempenho e durabilidade. São usadas em Sistemas SPDA, padrão, também na geração e transmissão de energia, redes de telecomunicações e aterramento de equipamentos. Garantindo assim maior segurança e proteção no projeto.", link: "hastebc.html" },
+                    { name: "Alta Camada", images: ["assets/hastealta.png", "assets/haste1.jpg", "assets/haste4.jpg"], description: "Composta por um núcleo de aço carbono SAE 1010/1020,  revestida de cobre, eletroliticamente, com pureza ≥ 99,9% e camada de 254 mícrons. Conforme ABNT NBR-13571. Garantem confiabilidade superior em sistemas de aterramento, oferecendo desempenho e durabilidade. São usadas em Sistemas SPDA, padrão, também na geração e transmissão de energia, redes de telecomunicações e aterramento de equipamentos. Garantindo assim maior segurança e proteção no projeto.", link: "hasteac.html" }
                 ]
             },
             "arames-trefilados": {
                 name: "Arames Trefilados",
                 images: ["assets/arame1.jpg", "assets/arame2.jpg", "assets/arame3.jpg"],
                 variations: [
-                    { name: "BTC - Baixo Teor de Carbono", image: "assets/aramespider.jpg", description: "Arames de Baixo Teor de Carbono, flexíveis e fáceis de manusear, ideais para amarração e usos gerais.", link: "aramebtc.html" },
-                    { name: "MTC - Médio Teor de Carbono", image: "assets/aramespider.jpg", description: "Arames de Médio Teor de Carbono, oferecendo maior resistência para aplicações que exigem mais robustez.", link: "aramemtc.html" },
-                    { name: "ATC - Alto Teor de Carbono", image: "assets/aramespider.jpg", description: "Arame de aço de alto desempenho é o padrão da indústria, resultado do processo de trefilação que aprimora suas propriedades mecânicas. Ele se destaca pela sua uniformidade dimensional e pela elevada resistência à tração, mantendo um excelente equilíbrio entre tenacidade e dureza. É a escolha essencial para inúmeras aplicações que requerem alta performance estrutural e confiabilidade, oferecendo o equilíbrio ideal entre resistência mecânica superior e precisão na aplicação.", link: "arameatc.html" }
+                    { name: "BTC - Baixo Teor de Carbono", images: ["assets/arame1.jpg", "assets/arame2.jpg", "assets/arame3.jpg"], description: "O arame de aço de alto desempenho é obtido através do processo de trefilação, que eleva suas características mecânicas. Se difere pela uniformidade dimensional e na melhora das propriedades mecânicas (limite de resistência, escoamento e dureza). Este material é fundamental em aplicações que exijam alta performance estrutural e confiabilidade, proporcionando um equilíbrio ideal entre limite de resistência, plasticidade e dureza. Ideais para Displays Aramados, Carrinho de Supermercado, Gradil, Utilidades Domésticas, Linha Branca, Esteiras, Cesto Aramado, Rack Metálico e outros.", link: "aramebtc.html" },
+                    { name: "MTC - Médio Teor de Carbono", images: ["assets/arame1.jpg", "assets/arame2.jpg", "assets/arame3.jpg"], description: "O arame de aço de alto desempenho é obtido através do processo de trefilação, que eleva suas características mecânicas. Se difere pela uniformidade dimensional e na melhora das propriedades mecânicas (limite de resistência, escoamento e dureza). Este material é fundamental em aplicações que exijam alta performance estrutural e confiabilidade, proporcionando um equilíbrio ideal entre limite de resistência, plasticidade e dureza. Ideais para Telas, Cabos, Molas, Componentes para Veículos, Pregos e outros.", link: "aramemtc.html" },
+                    { name: "ATC - Alto Teor de Carbono", images: ["assets/arame1.jpg", "assets/arame2.jpg", "assets/arame3.jpg"], description: "O arame de aço de alto desempenho é obtido através do processo de trefilação, que eleva suas características mecânicas. Se difere pela uniformidade dimensional e na melhora das propriedades mecânicas (limite de resistência, escoamento e dureza). Ideais para Molas, Arruelas de Pressão, Autopeças e Cabos de Aço.", link: "arameatc.html" }
                 ]
             }
         };
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     anchor.href = '#'; // O link real será usado pelo botão "Ver Detalhes"
                     anchor.textContent = variation.name;
                     // Armazena os dados da variação nos atributos data- para fácil acesso
-                    anchor.dataset.image = variation.image;
+                    anchor.dataset.images = JSON.stringify(variation.images);
                     anchor.dataset.description = variation.description;
                     anchor.dataset.link = variation.link;
                     listItem.appendChild(anchor);
@@ -110,13 +110,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault(); // Previne o comportamento padrão do link
                 variationDropdownButton.textContent = target.textContent; // Atualiza o texto do botão do dropdown
                 
-                // Atualiza apenas a primeira imagem quando uma variação é selecionada
-                productImage1.src = target.dataset.image;
-                productImage1.alt = `Imagem de ${target.textContent}`;
-                
-                // Oculta as outras 2 imagens
-                productImage2.style.display = 'none';
-                productImage3.style.display = 'none';
+                // Atualiza as 3 imagens quando uma variação é selecionada
+                const images = JSON.parse(target.dataset.images);
+                if (images && images.length >= 3) {
+                    productImage1.src = images[0];
+                    productImage1.alt = `Imagem 1 de ${target.textContent}`;
+                    productImage1.style.display = 'block';
+                    
+                    productImage2.src = images[1];
+                    productImage2.alt = `Imagem 2 de ${target.textContent}`;
+                    productImage2.style.display = 'block';
+                    
+                    productImage3.src = images[2];
+                    productImage3.alt = `Imagem 3 de ${target.textContent}`;
+                    productImage3.style.display = 'block';
+                }
                 
                 productDescription.innerHTML = `<p>${target.dataset.description}</p>`; // Atualiza a descrição
                 productDescription.style.display = 'block'; // Mostra a descrição
