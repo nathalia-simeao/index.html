@@ -111,6 +111,19 @@
     font-weight: 500;
 }
 
+/* Modo noturno - botão dropdown laranja */
+[data-bs-theme="dark"] .btn-torcisao-dropdown {
+    background-color: var(--cor-decoracao-laranja);
+    border-color: var(--cor-decoracao-laranja);
+    color: white;
+}
+
+[data-bs-theme="dark"] .btn-torcisao-dropdown:hover {
+    background-color: var(--cor-primaria-cinzaclaro);
+    border-color: var(--cor-primaria-cinzaclaro);
+    color: var(--cor-terciaria-cinzaescuro);
+}
+
 .btn-especificacoes-laranja {
     background-color: var(--cor-secundaria-cinzamedio);
     border: none;
