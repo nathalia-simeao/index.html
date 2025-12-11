@@ -150,6 +150,13 @@ h1.product-main-title {
     color: var(--cor-neutra-branco) !important; 
 }
 
+/* Garantir que todas as listas dentro dos cards fiquem brancas no modo noturno */
+[data-bs-theme="dark"] .destaque-card-barras ul,
+[data-bs-theme="dark"] .destaque-card-barras ul li,
+[data-bs-theme="dark"] .destaque-card-barras ul li strong {
+    color: var(--cor-neutra-branco) !important;
+}
+
 .btn-especificacoes-laranja {
     border-radius: 0 10px 0 10px; 
     font-weight: 600;
