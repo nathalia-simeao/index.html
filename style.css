@@ -1,3 +1,17 @@
+/*
+Theme Name: Torcisão Trefilados - 2025
+Theme URI: https://torcisao.com.br/meu-novo-tema-2025
+Author: Seu Nome ou Nome da Empresa
+Author URI: https://torcisao.com.br/
+Description: Um tema personalizado e moderno, com informações atualizadas sobre os produtos.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-background, e-commerce, two-columns
+Text Domain: meu-novo-tema
+*/
+
+
 @import url(cabecalho.css);
 @import url(banner1.css);
 @import url(produtos.css);
