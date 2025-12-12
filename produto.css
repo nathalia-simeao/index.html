@@ -11,6 +11,10 @@ main {
     padding-top: 120px;
 }
 
+.product-page-header {
+    margin-top: 60px;
+}
+
 /* Centraliza imagem no modal */
 .modal-product-img {
     display: block;
@@ -300,6 +304,12 @@ h1.product-main-title {
     .product-header-img {
         height: 180px;
         max-width: 350px;
+    }
+    
+    /* Espaçamento maior entre os itens de diferenciais no tablet */
+    .product-diferenciais-section .col-md-4 {
+        margin: 0 15px 20px 15px !important;
+        padding: 15px 12px !important;
     }
 }
 
