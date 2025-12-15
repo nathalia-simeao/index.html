@@ -1,28 +1,53 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
-    <?php wp_head(); ?>
+<?php 
+/**
+ * Template Name: Página Inicial
+ * 
+ * @package Torcisao_Trefilados
+ */
+
+get_header(); 
+?>
+<!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="torcisão-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner1.css">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="isosection.css">
+    <link rel="stylesheet" href="posfooter.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="provasocial.css">
+    <link rel="stylesheet" href="quemsomos.css">
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="blog.css">
+
 </head>
-<body <?php body_class(); ?> data-bs-theme="light">
+<body data-bs-theme="light">
 <header class="container">
     <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
       <div class="container-fluidnav">
-        <a class="container__navbar-imagem" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></a>
+        <a class="container__navbar-imagem" href="#"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="<?php echo get_template_directory_uri(); ?>/assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo home_url(); ?>">Início</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#quem-somos-section">Quem Somos</a>
@@ -40,10 +65,10 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barrabtc'); ?>">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barramtc'); ?>">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barraatc'); ?>">ATC - Alto Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barraacoressulfurado'); ?>">Aço Ressulfurado</a></li>
+                            <li><a class="dropdown-item" href="barrabtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barramtc.html">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barraatc.html">ATC - Alto Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barraacoressulfurado.html">Aço Ressulfurado</a></li>
                         </ul>
                     </li>
                     
@@ -53,9 +78,9 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/aramebtc'); ?>">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/aramemtc'); ?>">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/arameatc'); ?>">ATC - Alto Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="aramebtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="aramemtc.html">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="arameatc.html">ATC - Alto Teor de Carbono</a></li>
                         </ul>
                     </li>
                     
@@ -65,15 +90,15 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/hastebc'); ?>">Baixa Camada</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/hasteac'); ?>">Alta Camada</a></li>
+                            <li><a class="dropdown-item" href="hastebc.html">Baixa Camada</a></li>
+                            <li><a class="dropdown-item" href="hasteac.html">Alta Camada</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo home_url('/blog'); ?>">Blog</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -86,7 +111,7 @@
         </div>
       </div>
     </nav>
-</header>
+</header> -->
 <main>
     <section class="banner-1-section">
         <div class="banner-1-content">
@@ -105,7 +130,7 @@
     <div class="product-cards-container">
         
         <div class="product-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/barra1.jpg" alt="Barras Trefiladas" class="product-img">
+            <img src="assets/barra1.jpg" alt="Barras Trefiladas" class="product-img">
             <h3 class="product-name">Barras Trefiladas</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -117,7 +142,7 @@
         </div>
 
         <div class="product-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/haste1.jpg" alt="Haste de Aterramento" class="product-img">
+            <img src="assets/haste1.jpg" alt="Haste de Aterramento" class="product-img">
             <h3 class="product-name">Haste de Aterramento</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -129,7 +154,7 @@
         </div>
 
         <div class="product-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/arame1.jpg" alt="Arames Trefilados" class="product-img">
+            <img src="assets/arame1.jpg" alt="Arames Trefilados" class="product-img">
             <h3 class="product-name">Arames Trefilados</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -168,13 +193,13 @@
         <div class="text-center mb-4">
           <div class="row g-2">
             <div class="col-4">
-              <img id="productImage1" src="<?php echo get_template_directory_uri(); ?>/assets/barra1.jpg" class="modal-product-img" alt="Imagem do Produto 1">
+              <img id="productImage1" src="assets/barra1.jpg" class="modal-product-img" alt="Imagem do Produto 1">
             </div>
             <div class="col-4">
-              <img id="productImage2" src="<?php echo get_template_directory_uri(); ?>/assets/haste1.jpg" class="modal-product-img" alt="Imagem do Produto 2">
+              <img id="productImage2" src="assets/haste1.jpg" class="modal-product-img" alt="Imagem do Produto 2">
             </div>
             <div class="col-4">
-              <img id="productImage3" src="<?php echo get_template_directory_uri(); ?>/assets/arame4.jpg" class="modal-product-img" alt="Imagem do Produto 3">
+              <img id="productImage3" src="assets/arame4.jpg" class="modal-product-img" alt="Imagem do Produto 3">
             </div>
           </div>
         </div>
@@ -308,11 +333,11 @@
         <button class="btn btn-timeline-year btn-first-year timeline-highlight" data-has-crown="true"
         data-bs-toggle="modal" data-bs-target="#modal-ano-1968" id="btn-coroa-1968">
         <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
+        src="assets/coroa.svg"
         alt="Ícone Coroa"
         class="timeline-coroa-icon"
-        data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-        data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg"
+        data-original-src="assets/coroa.svg"
+        data-hover-src="assets/coroacinza.svg"
         draggable="false"
         >
         1968
@@ -323,22 +348,22 @@
 
         <button class="btn btn-timeline-year" data-bs-toggle="modal" data-bs-target="#modal-ano-1999" id="btn-coroa-1999" data-has-crown="true">
             <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg" 
+                src="assets/coroa.svg" 
                 alt="Ícone Coroa" 
                 class="timeline-coroa-icon"
-                data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-                data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg" 
+                data-original-src="assets/coroa.svg"
+                data-hover-src="assets/coroacinza.svg" 
             >
             1999
         </button>
 
         <button class="btn btn-timeline-year" data-bs-toggle="modal" data-bs-target="#modal-ano-2005" id="btn-coroa-2005" data-has-crown="true">
             <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg" 
+                src="assets/coroa.svg" 
                 alt="Ícone Coroa" 
                 class="timeline-coroa-icon"
-                data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-                data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg" 
+                data-original-src="assets/coroa.svg"
+                data-hover-src="assets/coroacinza.svg" 
             >
             2005
         </button>
@@ -349,11 +374,11 @@
 
         <button class="btn btn-timeline-year" data-bs-toggle="modal" data-bs-target="#modal-ano-2014" id="btn-coroa-2014" data-has-crown="true">
             <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg" 
+                src="assets/coroa.svg" 
                 alt="Ícone Coroa" 
                 class="timeline-coroa-icon"
-                data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-                data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg" 
+                data-original-src="assets/coroa.svg"
+                data-hover-src="assets/coroacinza.svg" 
             >
             2014
         </button>
@@ -362,22 +387,22 @@
 
         <button class="btn btn-timeline-year" data-bs-toggle="modal" data-bs-target="#modal-ano-2016" id="btn-coroa-2016" data-has-crown="true">
             <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg" 
+                src="assets/coroa.svg" 
                 alt="Ícone Coroa" 
                 class="timeline-coroa-icon"
-                data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-                data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg" 
+                data-original-src="assets/coroa.svg"
+                data-hover-src="assets/coroacinza.svg" 
             >
             2016
         </button>
 
         <button class="btn btn-timeline-year" data-has-crown="true" data-bs-toggle="modal" data-bs-target="#modal-ano-2017" id="btn-coroa-2017">
         <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
+        src="assets/coroa.svg"
         alt="Ícone Coroa"
         class="timeline-coroa-icon"
-        data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-        data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg"
+        data-original-src="assets/coroa.svg"
+        data-hover-src="assets/coroacinza.svg"
         draggable="false"
         >
         2017
@@ -387,22 +412,22 @@
 
         <button class="btn btn-timeline-year" data-bs-toggle="modal" data-bs-target="#modal-ano-2022" id="btn-coroa-2022" data-has-crown="true">
             <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg" 
+                src="assets/coroa.svg" 
                 alt="Ícone Coroa" 
                 class="timeline-coroa-icon"
-                data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-                data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg" 
+                data-original-src="assets/coroa.svg"
+                data-hover-src="assets/coroacinza.svg" 
             >
             2022
         </button>
     
         <button class="btn btn-timeline-year btn-last-year" data-has-crown="true" data-bs-toggle="modal" data-bs-target="#modal-ano-2024" id="btn-coroa-2024">
         <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
+        src="assets/coroa.svg"
         alt="Ícone Coroa"
         class="timeline-coroa-icon"
-        data-original-src="<?php echo get_template_directory_uri(); ?>/assets/coroa.svg"
-        data-hover-src="<?php echo get_template_directory_uri(); ?>/assets/coroacinza.svg"
+        data-original-src="assets/coroa.svg"
+        data-hover-src="assets/coroacinza.svg"
         draggable="false"
         >
         2024
@@ -413,28 +438,31 @@
     </div>
 
     <style>
+    /* Garante que o botão seja o contexto posicional para a coroa */
     .btn-timeline-year {
         position: relative;
-        padding-top: 24px;
+        padding-top: 24px; /* espaço para a coroa aparecer acima do número */
         display: inline-flex;
         align-items: center;
         justify-content: center;
     }
 
+    /* Estilo da coroa: sempre absoluta e centralizada horizontalmente */
     .timeline-coroa-icon {
         position: absolute;
-        top: 6px;
+        top: 6px;               /* ajuste vertical para alinhar acima do ano */
         left: 50%;
         transform: translateX(-50%);
         width: 18px;
         height: 18px;
         object-fit: contain;
-        pointer-events: none;
-        display: block;
+        pointer-events: none;   /* evita interferir no clique do botão */
+        display: block;         /* garante visibilidade */
         opacity: 1;
         transition: transform .12s ease, opacity .12s ease;
     }
 
+    /* efeito visual ao focar/hover no botão */
     .btn-timeline-year:focus .timeline-coroa-icon,
     .btn-timeline-year:hover .timeline-coroa-icon {
         transform: translateX(-50%) translateY(-2px);
@@ -473,7 +501,7 @@
                         <div class="form-check mb-4">
                             <input class="form-check-input" type="checkbox" value="" id="politica-privacidade" required>
                             <label class="form-check-label small" for="politica-privacidade">
-                                Eu li e aceito a <a href="<?php echo home_url('/politicadeprivacidade.html'); ?>" class="politica-link">Política de Privacidade</a> e concordo com o tratamento dos meus dados para as finalidades descritas.
+                                Eu li e aceito a <a href="politicadeprivacidade.html" class="politica-link">Política de Privacidade</a> e concordo com o tratamento dos meus dados para as finalidades descritas.
                             </label>
                         </div>
 
@@ -516,7 +544,7 @@
                 
                 <div class="row" style="margin-bottom: 2rem;">
                     <div class="col-12">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/lgcabecalhoclara220.png" alt="Torcisão Trefilados" style="width: 160px; margin: 0;">
+                        <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Trefilados" style="width: 160px; margin: 0;">
                     </div>
                 </div>
                 
@@ -525,12 +553,12 @@
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
                         
                         <h4 class="footer-column-title-first">Institucional</h4>
-                        <ul class="list-unstyled"> <li><a href="<?php echo home_url('/politicadequalidade.html'); ?>">Política de Qualidade</a></li>
-                            <li><a href="<?php echo home_url('/politicadeprivacidade.html'); ?>">Política de Privacidade</a></li>
-                            <li><a href="<?php echo home_url('/politicadecookies.html'); ?>">Política de Cookies</a></li>
-                            <li><a href="<?php echo home_url(); ?>">Início</a></li>
+                        <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
+                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="politicadecookies.html">Política de Cookies</a></li>
+                            <li><a href="index.html">Início</a></li>
                             <li><a href="#secao-produtos">Produtos</a></li>
-                            <li><a href="<?php echo home_url('/blog.html'); ?>">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                         </ul>
                     </div>
 
@@ -539,11 +567,11 @@
                         <h4 class="footer-column-title-first">Contatos</h4>
                         <p class="d-flex flex-column mb-4">
                             <a class="contato-link d-flex align-items-center" href="mailto:vendas@torcisao.com.br">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/email.png" alt="Email" class="footer-icon me-2" style="width: 20px;"> 
+                                <img src="assets/email.png" alt="Email" class="footer-icon me-2" style="width: 20px;"> 
                                 vendas@torcisao.com.br
                             </a>
                             <a class="contato-link d-flex align-items-center mt-2" href="tel:+551123349989">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/telefone.png" alt="Telefone" class="footer-icon me-2" style="width: 20px;"> 
+                                <img src="assets/telefone.png" alt="Telefone" class="footer-icon me-2" style="width: 20px;"> 
                                 (11) 2334-9989
                             </a>
                         </p>
@@ -567,26 +595,26 @@
                         
                         <h4 class="footer-column-title-first">Formas de Pagamento</h4>
                         <div class="formas-pagamento-icons d-flex flex-wrap gap-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/visa.png" alt="Visa" style="width: 50px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/mastercard.png" alt="Mastercard" style="width: 50px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/elo.png" alt="Elo" style="width: 50px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/boleto.png" alt="Boleto" style="width: 50px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/pix.png" alt="Pix" style="width: 50px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/BNDS.png" alt="BNDS" style="width: 50px;">
+                            <img src="assets/visa.png" alt="Visa" style="width: 50px;">
+                            <img src="assets/mastercard.png" alt="Mastercard" style="width: 50px;">
+                            <img src="assets/elo.png" alt="Elo" style="width: 50px;">
+                            <img src="assets/boleto.png" alt="Boleto" style="width: 50px;">
+                            <img src="assets/pix.png" alt="Pix" style="width: 50px;">
+                            <img src="assets/BNDS.png" alt="BNDS" style="width: 50px;">
                         </div>
 
                         <h4 class="mt-4">Redes Sociais</h4>
                         <div class="social-icons d-flex flex-wrap gap-3 mb-4">
                             <a href="https://www.instagram.com/torcisaotrefilados/" target="_blank" aria-label="Instagram">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/instagram.png" alt="Instagram" class="social-icon" style="width: 35px;">
+                                <img src="assets/instagram.png" alt="Instagram" class="social-icon" style="width: 35px;">
                             </a>
         
                             <a href="https://web.facebook.com/profile.php?id=61584578055637" target="_blank" aria-label="Facebook">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/facebook.png" alt="Facebook" class="social-icon" style="width: 35px;">
+                            <img src="assets/facebook.png" alt="Facebook" class="social-icon" style="width: 35px;">
                             </a>
         
                             <a href="https://www.linkedin.com/company/torcis%C3%A3o-trefilados/about/" target="_blank" aria-label="LinkedIn">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/linkedin.png" alt="LinkedIn" class="social-icon" style="width: 35px;">
+                                <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon" style="width: 35px;">
                             </a>
                         </div>
                     </div>
@@ -599,14 +627,444 @@
     <div class="post-footer">
     <div class="container d-flex justify-content-between flex-column flex-md-row align-items-center">
         <p class="mb-2 mb-md-0 d-flex align-items-center">
-            Somos associados da <img src="<?php echo get_template_directory_uri(); ?>/assets/ciesp.png" alt="Logo CIESP" class="ciesp-logo ms-2" style="max-width: 120px;">
+            Somos associados da <img src="assets/ciesp.png" alt="Logo CIESP" class="ciesp-logo ms-2" style="max-width: 120px;">
         </p>
         <p class="mb-0">Torcisão Copyright 2025 - Todos os direitos Reservados</p>
     </div>
     </div>
 
-<!-- Modais omitidos para brevidade - mantenha todos os modais do arquivo original aqui -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
-<?php wp_footer(); ?>
-</body>
-</html>
+<div class="modal fade" id="modal-vendas" tabindex="-1" aria-labelledby="modal-vendas-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">+100 Milhões de Toneladas</h6>
+                <p class="modal-paragraph mt-3"><strong>Vendas em toneladas até 2025.</strong></p>
+                <p class="modal-paragraph mt-3">Desde 2023 superamos a marca de 100 Milhões de toneladas de produtos fornecidos, solidificando nossa presença no mercado.</p>
+                <p class="modal-paragraph mt-3">Como Resultado do nosso trabalho e da nossa história desde 1968.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-satisfacao" tabindex="-1" aria-labelledby="modal-satisfacao-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">95% de Satisfação</h6>
+                <p class="modal-paragraph mt-3"><strong>Nível de satisfação dos nossos clientes.</strong></p>
+                <p class="modal-paragraph mt-3">Em nossa última pesquisa, alcançamos 95% de satisfação. Esse número é a prova de nosso compromisso inquestionável com a qualidade dos produtos, o rigoroso atendimento a prazos e o suporte técnico especializado para cada projeto.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-clientes" tabindex="-1" aria-labelledby="modal-clientes-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">+11 Mil Clientes</h6>
+                <p class="modal-paragraph mt-3"><strong>Nossa vasta rede de clientes atendidos.</strong></p>
+                <p class="modal-paragraph mt-3">Com mais de cinco décadas de mercado, celebramos 57 anos de dedicação e excelência. Apoiamos mais de 11 mil empresas e projetos em diversos segmentos como indústria, construção civil e energia, sendo honrados pela confiança depositada em nossos produtos.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-1968" tabindex="-1" aria-labelledby="modal-ano-1968-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">1968 - Início da Jornada</h6>
+                <p class="modal-paragraph">A Torcisão Trefilados nasce em 1968, focada no desenvolvimento de materiais para a indústria automobilística, destacando-se pelo rigoroso controle técnico e de qualidade.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-1975" tabindex="-1" aria-labelledby="modal-ano-1975-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">1975 - Mudanças Estratégicas</h6>
+                <p class="modal-paragraph">A empresa realiza uma troca de razão social, consolidando-se como "Indústria e Comércio de Ferros e Aços Trefilados, Arruelas, Rebites, Engraxadeiras, Porcas, Parafusos, Pregos e Torneados em Geral.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-1978" tabindex="-1" aria-labelledby="modal-ano-1978-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">1978 - Nova Sede, Nova Identidade</h6>
+                <p class="modal-paragraph">A matriz é transferida para Vila Liviero, São Paulo, marcando não apenas uma mudança de endereço, mas também uma ampliação do escopo de atuação.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-1999" tabindex="-1" aria-labelledby="modal-ano-1999-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">1999 - Novos Rumos com a Direção Atual</h6>
+                <p class="modal-paragraph">A Torcisão passa por uma aquisição pela diretoria atual, impulsionando uma fase de renovação e crescimento.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2005" tabindex="-1" aria-labelledby="modal-ano-2005-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2005 - Torcisão Industrial Ganha Vida<h6>
+                <p class="modal-paragraph">Surge a Torcisão Industrial, agora com sede própria, iniciando suas atividades focadas na fabricação de acessórios para escoramento, fôrmas e andaimes.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2006" tabindex="-1" aria-labelledby="modal-ano-2006-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2006 - Expansão para a construção civil<h6>
+                <p class="modal-paragraph">Em 2006, aproveitando o crescimento da construção civil, a Torcisão Industrial diversifica suas atividades, consolidando-se como referência na fabricação de produtos para esse setor.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2011" tabindex="-1" aria-labelledby="modal-ano-2011-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2011 - Unidade de Protensão</h6>
+                <p class="modal-paragraph">A empresa lançou a unidade de protensão em 2011, ampliando seu escopo de atuação para atender clientes em grandes obras no Brasil.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2013" tabindex="-1" aria-labelledby="modal-ano-2013-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2013 - Avanço para Mineração e Túneis<h6>
+                <p class="modal-paragraph">A Torcisão inicia a fabricação de barras roscadas em 2013, ampliando seu portfólio para atender às demandas de sustentação de rochas em escavações subterrâneas.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2014" tabindex="-1" aria-labelledby="modal-ano-2014-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2014 - Especialização em Haste de Aterramento</h6>
+                <p class="modal-paragraph">A Torcisão Trefilados se especializa na fabricação de haste de aterramento, atendendo com precisão diversas obras de infraestrutura e construção civil.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2015" tabindex="-1" aria-labelledby="modal-ano-2015-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2015 - Ingresso no setor de Energia</h6>
+                <p class="modal-paragraph">A Torcisão Industrial expande suas atividades para o setor de energia, produzindo produtos de qualidade para fundações de obras energéticas.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2016" tabindex="-1" aria-labelledby="modal-ano-2016-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2016 - Sede Própria em Ribeirão Pires</h6>
+                <p class="modal-paragraph">A empresa muda sua sede para Ribeirão Pires em 2016, marcando uma fase de consolidação e modernização.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2017" tabindex="-1" aria-labelledby="modal-ano-2017-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2017 - Unidade de Arames</h6>
+                <p class="modal-paragraph">A empresa lançou a unidade de Arames Trefilados em 2017, aumentando a sua atuação e participação no mercado e seu mix de produtos.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2019" tabindex="-1" aria-labelledby="modal-ano-2019-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2019 - Inovação com Estacas Metálicas Helicoidais</h6>
+                <p class="modal-paragraph">Desenvolvimento e patenteamento de Estacas Metálicas Helicoidais como solução para Provas de Carga Estática, proporcionando agilidade e eficiência nas obras.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2022" tabindex="-1" aria-labelledby="modal-ano-2022-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2022 - Nascimento do Grupo Torcisão</h6>
+                <p class="modal-paragraph">Em 2022, a Torcisão se transforma no Grupo Torcisão, um marco que reflete a expansão e diversificação de suas atividades ao longo dos anos. O grupo consolida sua posição como líder em diversos segmentos industriais.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-ano-2024" tabindex="-1" aria-labelledby="modal-ano-2024-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/lgcabecalho300.png" alt="Torcisão Logo" class="modal-logo modal-logo-dark me-2">
+                <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Logo" class="modal-logo modal-logo-light me-2">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="modal-subtitle-highlight">2024 - Aumento do Parque Fabril - 4.000 m²</h6>
+                <p class="modal-paragraph">Com a aquisição de um galpão para estocagem de matéria-prima ampliamos nossa capacidade de armazenamento e produção.</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary-fechar" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- CORREÇÃO DEFINITIVA DA LINHA DO TEMPO (SCROLL HORIZONTAL INICIAL) ---
+    // Usa window.onload para garantir que o layout CSS/Flexbox foi finalizado.
+    window.onload = function() {
+        
+        // Verifica se a largura da janela é menor ou igual a 991.98px (Mobile/Tablet)
+        if (window.innerWidth <= 991.98) {
+            
+            const timeline = document.querySelector('.timeline-container');
+            
+            if (timeline) {
+                
+                // Usa setTimeout(0) para garantir que o scroll seja aplicado após
+                // a conclusão de todas as tarefas de renderização pendentes.
+                setTimeout(function() {
+                    timeline.scrollLeft = 0;
+                }, 1); // 1 milissegundo é suficiente para adiar a execução
+            }
+        }
+    };
+    
+    // NOTA: Se você já tem um 'window.onload' em outro lugar, você deve combiná-lo. 
+    // Se não tiver, este bloco funcionará como o ponto de partida ideal.
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Para cada botão que declara data-has-crown="true"
+    const buttonsWithCrown = document.querySelectorAll('button[data-has-crown="true"]');
+
+    buttonsWithCrown.forEach(btn => {
+        // Tenta encontrar um <img> existente dentro do botão com a classe esperada
+        let icon = btn.querySelector('.timeline-coroa-icon');
+
+        // Se não existir, criamos e inserimos no topo do botão
+        if (!icon) {
+            const img = document.createElement('img');
+            img.className = 'timeline-coroa-icon';
+            img.alt = 'Ícone Coroa';
+            // valores default — ajuste se necessário
+            img.setAttribute('data-original-src', 'assets/coroa.svg');
+            img.setAttribute('data-hover-src', 'assets/coroacinza.svg');
+            img.src = img.getAttribute('data-original-src');
+            // inserir antes do texto para garantir posicionamento previsível
+            btn.insertBefore(img, btn.firstChild);
+            icon = img;
+        }
+
+        // garante que a imagem inicial seja a original
+        const originalSrc = icon.getAttribute('data-original-src') || icon.src || 'assets/coroa.svg';
+        const hoverSrc = icon.getAttribute('data-hover-src') || originalSrc;
+        // se src atual estiver ausente ou diferente, ajusta
+        if (!icon.src || icon.src.indexOf(originalSrc) === -1) {
+            icon.src = originalSrc;
+        }
+
+        // Funções utilitárias
+        function setHover() { icon.src = hoverSrc; }
+        function setOriginal() { icon.src = originalSrc; }
+
+        // Usar listeners no botão (mais confiável para focus/hover em acessibilidade)
+        btn.addEventListener('mouseenter', setHover);
+        btn.addEventListener('mouseleave', setOriginal);
+        btn.addEventListener('focus', setHover, true);
+        btn.addEventListener('blur', setOriginal, true);
+
+        // Suporte touch: clique alterna visual brevemente sem impedir abertura do modal
+        let touchTimeout = null;
+        btn.addEventListener('click', function () {
+            // visual feedback rápido para toque
+            setHover();
+            clearTimeout(touchTimeout);
+            touchTimeout = setTimeout(setOriginal, 600);
+        });
+    });
+
+    // Debug helper (remoção opcional): mostra no console quantas coroas foram configuradas
+    // console.info('Coroas configuradas:', buttonsWithCrown.length);
+});
+</script>
+
+<?php get_footer(); ?>

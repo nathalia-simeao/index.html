@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Qualidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="torcisão-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="institucional.css">
+
+</head>
+
+<body data-bs-theme="light">
+<header class="container">
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluidnav">
+        <a class="container__navbar-imagem" href="index.html"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#quem-somos-section">Quem Somos</a>
+              </li>
+             <li class="nav-item dropdown has-submenu"> 
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                
+                <ul class="dropdown-menu">
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Barras Trefiladas
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="barrabtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barramtc.html">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barraatc.html">ATC - Alto Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barraacoressulfurado.html">Aço Ressulfurado</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Arames Trefilados
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aramebtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="aramemtc.html">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="arameatc.html">ATC - Alto Teor de Carbono</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Haste de Aterramento
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hastebc.html">Baixa Camada</a></li>
+                            <li><a class="dropdown-item" href="hasteac.html">Alta Camada</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-header-doc pt-4 pb-1"> 
+        <div class="container">
+            <h1 class="page-main-title fw-bold mb-4">
+                Passe o mouse em cima da letra e leia a nossa Política de Qualidade
+            </h1>
+        </div>
+    </div>
+
+    <section class="politica-qualidade-container py-5">
+        <div class="container">
+            
+            <div class="torcisao-grid-wrapper"> 
+                
+                <ul class="lista-torcisao">
+                    <li class="politica-item" data-letra="T" data-texto="odos compromissados permanentemente com:">
+                        <span class="texto-letra">T</span>
+                    </li>
+                    <li class="politica-item" data-letra="O" data-texto="bservação criteriosa das necessidades dos clientes.">
+                        <span class="texto-letra">O</span>
+                    </li>
+                    <li class="politica-item" data-letra="R" data-texto="enovação e adequação constantes de nossos processos.">
+                        <span class="texto-letra">R</span>
+                    </li>
+                    <li class="politica-item" data-letra="C" data-texto="umprir prazos, mantendo a qualidade.">
+                        <span class="texto-letra">C</span>
+                    </li>
+                    <li class="politica-item" data-letra="I" data-texto="nvestir na melhoria continua do sistema de qualidade.">
+                        <span class="texto-letra">I</span>
+                    </li>
+                    <li class="politica-item" data-letra="S" data-texto="atisfação dos clientes garantindo uma parceria confiável.">
+                        <span class="texto-letra">S</span>
+                    </li>
+                    <li class="politica-item" data-letra="A" data-texto="mbiente de trabalho agradável.">
+                        <span class="texto-letra">A</span>
+                    </li>
+                    <li class="politica-item" data-letra="O" data-texto="bjetificar cada vez mais ações e negociações eficazes.">
+                        <span class="texto-letra">O</span>
+                    </li>
+                </ul>
+
+                <!-- A área de texto expandido foi removida, pois cada letra agora tem sua própria descrição -->
+                
+            </div>
+        </div>
+    </section>
+</main>              
+
+
+<footer class="main-footer py-5">
+    <div class="container">
+        
+        <div class="row justify-content-center"> 
+            
+            <div class="col-12 col-lg-10">
+                
+                <div class="row" style="margin-bottom: 2rem;">
+                    <div class="col-12">
+                        <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Trefilados" style="width: 160px; margin: 0;">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        
+                        <h4 class="footer-column-title-first">Institucional</h4>
+                        <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
+                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="politicadecookies.html">Política de Cookies</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="index.html#secao-produtos">Produtos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        
+                        <h4 class="footer-column-title-first">Contatos</h4>
+                        <p class="d-flex flex-column mb-4">
+                            <a class="contato-link d-flex align-items-center" href="mailto:vendas@torcisao.com.br">
+                                <img src="assets/email.png" alt="Email" class="footer-icon me-2" style="width: 20px;"> 
+                                vendas@torcisao.com.br
+                            </a>
+                            <a class="contato-link d-flex align-items-center mt-2" href="tel:+551123349989">
+                                <img src="assets/telefone.png" alt="Telefone" class="footer-icon me-2" style="width: 20px;"> 
+                                (11) 2334-9989
+                            </a>
+                        </p>
+                        
+                        <h4 class="mt-4">Onde Estamos</h4>
+                        <address class="mb-0" style="font-style: normal;">
+                            <a 
+                                href="https://www.google.com/maps/search/?api=1&query=Rua+Francisco+Pedroso+de                    +Toledo,+138,+Vila+Livieiro,+São+Paulo/SP,+04185-150"
+                                target="_blank" 
+                                class="contato-link" 
+                                style="display: block; text-decoration: none;"
+                            >
+                                Rua Francisco Pedroso de Toledo, 138<br>
+                                Vila Livieiro - São Paulo/SP<br>
+                                CEP: 04185-150
+                            </a>
+                        </address>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        
+                        <h4 class="footer-column-title-first">Formas de Pagamento</h4>
+                        <div class="formas-pagamento-icons d-flex flex-wrap gap-2">
+                            <img src="assets/visa.png" alt="Visa" style="width: 50px;">
+                            <img src="assets/mastercard.png" alt="Mastercard" style="width: 50px;">
+                            <img src="assets/elo.png" alt="Elo" style="width: 50px;">
+                            <img src="assets/boleto.png" alt="Boleto" style="width: 50px;">
+                            <img src="assets/pix.png" alt="Pix" style="width: 50px;">
+                            <img src="assets/BNDS.png" alt="BNDS" style="width: 50px;">
+                        </div>
+
+                        <h4 class="mt-4">Redes Sociais</h4>
+                        <div class="social-icons d-flex flex-wrap gap-3 mb-4">
+                            <a href="https://www.instagram.com/torcisaotrefilados/" target="_blank" aria-label="Instagram">
+                                <img src="assets/instagram.png" alt="Instagram" class="social-icon" style="width: 35px;">
+                            </a>
+        
+                            <a href="https://web.facebook.com/profile.php?id=61584578055637" target="_blank" aria-label="Facebook">
+                            <img src="assets/facebook.png" alt="Facebook" class="social-icon" style="width: 35px;">
+                            </a>
+        
+                            <a href="https://www.linkedin.com/company/torcis%C3%A3o-trefilados/about/" target="_blank" aria-label="LinkedIn">
+                                <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon" style="width: 35px;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+<div class="post-footer">
+    <div class="container d-flex justify-content-between flex-column flex-md-row align-items-center">
+        <p class="mb-2 mb-md-0 d-flex align-items-center">
+            Somos associados da <img src="assets/ciesp.png" alt="Logo CIESP" class="ciesp-logo ms-2" style="max-width: 120px;">
+        </p>
+        <p class="mb-0">Torcisão Copyright 2025 - Todos os direitos Reservados</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+    </body>
+</html>

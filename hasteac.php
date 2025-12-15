@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haste de Aterramento - Alta Camada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="torcisão-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="isosection.css">
+    <link rel="stylesheet" href="posfooter.css">
+    <link rel="stylesheet" href="produto.css">
+</head>
+
+<body data-bs-theme="light">
+<header class="container">
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluidnav">
+        <a class="container__navbar-imagem" href="index.html"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#quem-somos-section">Quem Somos</a>
+              </li>
+             <li class="nav-item dropdown has-submenu"> 
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                
+                <ul class="dropdown-menu">
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Barras Trefiladas
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="barrabtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barramtc.html">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="barraacoressulfurado.html">Aço Ressulfurado</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Arames Trefilados
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aramebtc.html">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="aramemtc.html">MTC - Médio Teor de Carbono</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropend has-submenu-2">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Haste de Aterramento
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hastebc.html">Baixa Camada</a></li>
+                            <li><a class="dropdown-item" href="hasteac.html">Alta Camada</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container product-page-header pt-4 pb-1 text-center">
+        <h1 class="product-main-title fw-bold mb-4">
+            Haste de Aterramento - Alta Camada 
+        </h1>
+        <div id="carousel-hasteac" class="carousel slide product-carousel mb-3" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-hasteac" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-hasteac" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-hasteac" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-hasteac" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/haste1.jpg" class="d-block w-100" alt="Haste - Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/hastebaixa.webp" class="d-block w-100" alt="Haste - Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/hastealta.png" class="d-block w-100" alt="Haste - Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/haste4.jpg" class="d-block w-100" alt="Haste - Imagem 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hasteac" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-hasteac" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+<section class="product-info-page py-5">
+    <div class="container product-info-container">
+        
+        <div class="row justify-content-center text-start mb-4"> 
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-3 p-md-4 destaque-card-barras">
+                    <h3 class="card-title h5 fw-bold text-laranja">Características</h3>
+                    <p class="card-text small">
+                        Composta por um núcleo de aço carbono SAE 1010/1020,  revestida de cobre, eletroliticamente, com pureza ≥ 99,9% e camada de 254 mícrons. 
+                        </p>
+                        <p class="card-text small">
+                        Conforme ABNT NBR-13571.
+                        </p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-3 p-md-4 destaque-card-barras">
+                    <h3 class="card-title h5 fw-bold text-laranja">Aplicabilidade</h3>
+                    <p class="card-text small">
+                        <strong>Sua aplicação é vasta, abrangendo:</strong> Garantem confiabilidade superior em sistemas de aterramento, oferecendo desempenho e durabilidade. São usadas em Sistemas SPDA, padrão, também na geração e transmissão de energia, redes de telecomunicações e aterramento de equipamentos. Garantindo assim maior segurança e proteção no projeto. 
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-3 p-md-4 destaque-card-barras">
+                    <h3 class="card-title h5 fw-bold text-laranja">Segmento</h3>
+                    <p class="card-text small">
+                        <ul class="mb-0">
+                            <li>Geração e Transmissão de Energia</li>
+                            <li>Distribuição de Energia</li>
+                            <li>Energias Renováveis</li>
+                            <li>Edificações Residenciais e Prediais</li>
+                            <li>Construção Industrial</li>
+                            <li>Redes de Telecomunicações</li>
+                            <li>Infraestrutura de Internet</li>
+                            <li>Sistemas de Proteção</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-3 p-md-4 destaque-card-barras">
+                    <h3 class="card-title h5 fw-bold text-laranja">Especificações</h3>
+                    <p class="card-text small">
+                        <ul>
+                            <li><strong>Diâmetro</strong>: ½, ⅝ e ¾ </li>
+                            <li><strong>Comprimento</strong>: 2.000 / 2.400 e 3.000 - mm</li>
+                            <li><strong>Perfil</strong>: Redondo.</li>
+                            <li><strong>Acabamento</strong>: Trefilado / Cobre</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div> <div class="row justify-content-center mt-4">
+            
+            <div class="col-12 col-lg-10">
+                <div class="card destaque-card-secundario p-3">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-md-5 mb-3 mb-md-0 text-center">
+                            <div id="carousel-conectores" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-conectores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-conectores" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/conector1.jpg" class="d-block w-100 border-radius-especial" alt="Conector Tipo 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/conector2.webp" class="d-block w-100 border-radius-especial" alt="Conector Tipo 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-conectores" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-conectores" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-7">
+                            <h3 class="card-title h4 fw-bold text-laranja mt-0">Conectores</h3>
+                            <p class="card-text text-start">
+                                Garantem a conexão ideal entre haste e cabo por oferecer alta condutividade e resistência à corrosão. Com sistema de aperto simples,  se tornam perfeitas para sistemas de aterramento em ambientes residenciais, prediais, industriais, redes de distribuição de energia e telecomunicações.
+                            </p>
+                            <p class="card-text text-start">
+                                Estão disponíveis em dois modelos: grampo e olhal (podendo ser em latão ou bronze), atendendo à norma ABNT NBR-5370.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div> </div>
+</section>
+
+<div class="container text-center pt-1 pb-3">
+    <a href="#tabela-especificacoes" class="btn btn-especificacoes-laranja btn-lg">Informações Técnicas</a>
+</div>
+
+<section class="product-diferenciais-section py-3 mb-3">
+    <div class="container px-3">
+        <div class="row text-center text-white justify-content-center align-items-center">
+            
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <img src="assets/certificado.png" alt="Controle de Qualidade" class="diferencial-img mb-3" style="width: 50px;">
+                <p>Controle rigoroso de qualidade<br> em todos os produtos.</p>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <img src="assets/suporte.png" alt="Suporte direto da fábrica" class="diferencial-img mb-3" style="width: 50px;">
+                <p>Suporte direto da fábrica para<br> qualquer dúvida ou necessidade.</p>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <img src="assets/frete.png" alt="Frete em toda Grande São Paulo" class="diferencial-img mb-3" style="width: 50px;">
+                <p>Frete em toda<br> Grande São Paulo.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="form-section py-5" id="formulario-orcamento">
+    <div class="container">
+        <div class="row justify-content-center">
+            
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center order-2 order-lg-0">
+                <div class="form-wrapper p-4 p-md-5 rounded-4 bg-white shadow-lg">
+                    <h2 class="form-title mb-4">
+                        Solicite agora o seu <br> orçamento personalizado
+                    </h2>
+                    
+                    <form action="#" method="POST">
+                        
+                        <div class="mb-3">
+                            <label for="form-nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="form-nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="form-email" class="form-label">E-mail</label>
+                            <input type="text" class="form-control" id="form-email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="form-telefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="form-telefone" required>
+                        </div>
+                        
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="politica-privacidade" required>
+                            <label class="form-check-label small" for="politica-privacidade">
+                                Eu li e aceito a <a href="politicadeprivacidade.html" class="politica-link">Política de Privacidade</a> e concordo com o tratamento dos meus dados para as finalidades descritas.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-torcisao-laranja w-100 p-2">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex align-items-center form-destaque-bg order-1 order-lg-0">
+                <div class="p-4 p-md-5 text-center text-white">
+                    <h3 class="destaque-text">
+                        Se é Torcisão, é garantia de durabilidade, segurança e o melhor custo-benefício do mercado.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="iso-section">
+    <a href="https://drive.google.com/file/d/1csvp6XcIvffw2O-F7MXWyL6QPB9ZD-St/view?usp=drive_link" 
+       class="iso-banner-wrapper" 
+       target="_blank" 
+       title="Clique para visualizar o Certificado ISO 9001:2015">
+        <p>
+            Acesse aqui o nosso certificado de ISO 9001 - 2015
+        </p>
+    </a>
+    </section>
+
+</main>
+
+<footer class="main-footer py-5">
+    <div class="container">
+        
+        <div class="row justify-content-center"> 
+            
+            <div class="col-12 col-lg-10">
+                
+                <div class="row" style="margin-bottom: 2rem;">
+                    <div class="col-12">
+                        <img src="assets/lgcabecalhoclara220.png" alt="Torcisão Trefilados" style="width: 160px; margin: 0;">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        
+                        <h4 class="footer-column-title-first">Institucional</h4>
+                        <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
+                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="politicadecookies.html">Política de Cookies</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="index.html#secao-produtos">Produtos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        
+                        <h4 class="footer-column-title-first">Contatos</h4>
+                        <p class="d-flex flex-column mb-4">
+                            <a class="contato-link d-flex align-items-center" href="mailto:vendas@torcisao.com.br">
+                                <img src="assets/email.png" alt="Email" class="footer-icon me-2" style="width: 20px;"> 
+                                vendas@torcisao.com.br
+                            </a>
+                            <a class="contato-link d-flex align-items-center mt-2" href="tel:+551123349989">
+                                <img src="assets/telefone.png" alt="Telefone" class="footer-icon me-2" style="width: 20px;"> 
+                                (11) 2334-9989
+                            </a>
+                        </p>
+                        
+                        <h4 class="mt-4">Onde Estamos</h4>
+                        <address class="mb-0" style="font-style: normal;">
+                            <a 
+                                href="https://www.google.com/maps/search/?api=1&query=Rua+Francisco+Pedroso+de                    +Toledo,+138,+Vila+Livieiro,+São+Paulo/SP,+04185-150"
+                                target="_blank" 
+                                class="contato-link" 
+                                style="display: block; text-decoration: none;"
+                            >
+                                Rua Francisco Pedroso de Toledo, 138<br>
+                                Vila Livieiro - São Paulo/SP<br>
+                                CEP: 04185-150
+                            </a>
+                        </address>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        
+                        <h4 class="footer-column-title-first">Formas de Pagamento</h4>
+                        <div class="formas-pagamento-icons d-flex flex-wrap gap-2">
+                            <img src="assets/visa.png" alt="Visa" style="width: 50px;">
+                            <img src="assets/mastercard.png" alt="Mastercard" style="width: 50px;">
+                            <img src="assets/elo.png" alt="Elo" style="width: 50px;">
+                            <img src="assets/boleto.png" alt="Boleto" style="width: 50px;">
+                            <img src="assets/pix.png" alt="Pix" style="width: 50px;">
+                            <img src="assets/BNDS.png" alt="BNDS" style="width: 50px;">
+                        </div>
+
+                        <h4 class="mt-4">Redes Sociais</h4>
+                        <div class="social-icons d-flex flex-wrap gap-3 mb-4">
+                            <a href="https://www.instagram.com/torcisaotrefilados/" target="_blank" aria-label="Instagram">
+                                <img src="assets/instagram.png" alt="Instagram" class="social-icon" style="width: 35px;">
+                            </a>
+        
+                            <a href="https://web.facebook.com/profile.php?id=61584578055637" target="_blank" aria-label="Facebook">
+                            <img src="assets/facebook.png" alt="Facebook" class="social-icon" style="width: 35px;">
+                            </a>
+        
+                            <a href="https://www.linkedin.com/company/torcis%C3%A3o-trefilados/about/" target="_blank" aria-label="LinkedIn">
+                                <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon" style="width: 35px;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+<div class="post-footer">
+    <div class="container d-flex justify-content-between flex-column flex-md-row align-items-center">
+        <p class="mb-2 mb-md-0 d-flex align-items-center">
+            Somos associados da <img src="assets/ciesp.png" alt="Logo CIESP" class="ciesp-logo ms-2" style="max-width: 120px;">
+        </p>
+        <p class="mb-0">Torcisão Copyright 2025 - Todos os direitos Reservados</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+    </body>
+</html>
