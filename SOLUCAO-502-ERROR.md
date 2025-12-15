@@ -3,13 +3,33 @@
 ## 🚨 O que é o erro 502?
 O servidor nginx não consegue se comunicar com o PHP/WordPress.
 
+## ⚠️ ATENÇÃO: Você está no Windows Local
+- Estes comandos Linux são para executar **NO SERVIDOR de hospedagem**
+- **NÃO execute no Windows** - não funcionará
+- Use o **painel da hospedagem** ou **SSH para conectar ao servidor primeiro**
+
 ## ✅ Soluções (Tente na ordem)
 
 ### Solução 1: Reiniciar Serviços (MAIS COMUM)
 
-#### No Trello/Servidor Linux:
+#### ⚠️ IMPORTANTE: Você está no Windows, mas o servidor está em hospedagem Linux!
+
+**OPÇÃO A: Via Painel de Controle da Hospedagem (RECOMENDADO)**
+1. Acesse o painel (cPanel, Plesk, etc.)
+2. Procure: "PHP-FPM Manager" ou "Reiniciar Serviços"
+3. Clique em "Restart" no PHP-FPM
+4. Se tiver, reinicie também Nginx/LiteSpeed
+
+**OPÇÃO B: Via SSH (Se tiver acesso)**
+Primeiro conecte ao servidor do Windows:
+```powershell
+# No PowerShell do Windows, execute:
+ssh seu-usuario@seuservidor.com.br
+```
+
+Depois de conectado ao servidor, execute:
 ```bash
-# Reiniciar PHP-FPM
+# ESTES COMANDOS SÃO NO SERVIDOR, NÃO NO WINDOWS!
 sudo systemctl restart php-fpm
 # ou se for PHP 8.x
 sudo systemctl restart php8.1-fpm
@@ -23,6 +43,11 @@ sudo systemctl restart nginx
 sudo systemctl status php-fpm
 sudo systemctl status nginx
 ```
+
+**OPÇÃO C: Contatar Suporte da Hospedagem**
+Se não tem acesso SSH ou ao painel:
+- Abra um ticket de suporte
+- Informe: "Site com erro 502, preciso reiniciar PHP-FPM"
 
 #### Se usar XAMPP/Local WP no Windows:
 1. Abra o painel de controle do XAMPP
