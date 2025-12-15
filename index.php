@@ -40,10 +40,10 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barrabtc.html'); ?>">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barramtc.html'); ?>">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barraatc.html'); ?>">ATC - Alto Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/barraacoressulfurado.html'); ?>">Aço Ressulfurado</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/barrabtc'); ?>">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/barramtc'); ?>">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/barraatc'); ?>">ATC - Alto Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/barraacoressulfurado'); ?>">Aço Ressulfurado</a></li>
                         </ul>
                     </li>
                     
@@ -53,9 +53,9 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/aramebtc.html'); ?>">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/aramemtc.html'); ?>">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/arameatc.html'); ?>">ATC - Alto Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/aramebtc'); ?>">BTC - Baixo Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/aramemtc'); ?>">MTC - Médio Teor de Carbono</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/arameatc'); ?>">ATC - Alto Teor de Carbono</a></li>
                         </ul>
                     </li>
                     
@@ -65,15 +65,15 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo home_url('/hastebc.html'); ?>">Baixa Camada</a></li>
-                            <li><a class="dropdown-item" href="<?php echo home_url('/hasteac.html'); ?>">Alta Camada</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/hastebc'); ?>">Baixa Camada</a></li>
+                            <li><a class="dropdown-item" href="<?php echo home_url('/hasteac'); ?>">Alta Camada</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo home_url('/blog.html'); ?>">Blog</a>
+                <a class="nav-link" href="<?php echo home_url('/blog'); ?>">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">

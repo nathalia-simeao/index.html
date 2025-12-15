@@ -79,8 +79,50 @@ function torcisao_theme_support() {
         'flex-height' => true,
         'flex-width'  => true,
     ));
+    
+    // Register navigation menus
+    register_nav_menus(array(
+        'primary' => __('Menu Principal', 'torcisao'),
+    ));
 }
 add_action('after_setup_theme', 'torcisao_theme_support');
 
 // Remove WordPress version from head
 remove_action('wp_head', 'wp_generator');
+
+// Create custom page templates on theme activation
+function torcisao_create_pages() {
+    // Check if pages already exist
+    $pages = array(
+        'blog' => 'Blog',
+        'barrabtc' => 'Barras BTC',
+        'barramtc' => 'Barras MTC',
+        'barraatc' => 'Barras ATC',
+        'barraacoressulfurado' => 'Barras Aço Ressulfurado',
+        'aramebtc' => 'Arames BTC',
+        'aramemtc' => 'Arames MTC',
+        'arameatc' => 'Arames ATC',
+        'hastebc' => 'Haste Baixa Camada',
+        'hasteac' => 'Haste Alta Camada',
+        'politicadecookies' => 'Política de Cookies',
+        'politicadeprivacidade' => 'Política de Privacidade',
+        'politicadequalidade' => 'Política de Qualidade',
+    );
+    
+    foreach ($pages as $slug => $title) {
+        // Check if page exists
+        $page = get_page_by_path($slug);
+        
+        if (!$page) {
+            // Create page
+            wp_insert_post(array(
+                'post_title'    => $title,
+                'post_name'     => $slug,
+                'post_status'   => 'publish',
+                'post_type'     => 'page',
+                'post_content'  => '',
+            ));
+        }
+    }
+}
+add_action('after_switch_theme', 'torcisao_create_pages');
