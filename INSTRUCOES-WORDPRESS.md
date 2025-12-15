@@ -64,9 +64,31 @@ Para cada produto, crie uma página com:
 **Template**: Deixe como "Padrão"
 
 #### Páginas Institucionais
-- politicadecookies (Política de Cookies)
-- politicadeprivacidade (Política de Privacidade)
-- politicadequalidade (Política de Qualidade)
+Para cada política, você precisará:
+1. Criar a página no WordPress
+2. Copiar o conteúdo do arquivo .html correspondente
+3. Colar no editor do WordPress
+
+**Política de Privacidade**
+- **Título**: Política de Privacidade
+- **Slug**: politicadeprivacidade
+- **Conteúdo**: Abra o arquivo `politicadeprivacidade.html`, copie todo o conteúdo da tag `<main>` e cole no editor
+- **Template**: Padrão
+- **Publicar**
+
+**Política de Qualidade**
+- **Título**: Política de Qualidade
+- **Slug**: politicadequalidade
+- **Conteúdo**: Copie o conteúdo de `politicadequalidade.html`
+- **Template**: Padrão
+- **Publicar**
+
+**Política de Cookies**
+- **Título**: Política de Cookies
+- **Slug**: politicadecookies
+- **Conteúdo**: Copie o conteúdo de `politicadecookies.html`
+- **Template**: Padrão
+- **Publicar**
 
 ### Passo 2: Configurar Página Inicial
 
@@ -105,6 +127,15 @@ Se usar algum plugin de cache:
 - Verifique se a pasta `assets/` está no tema
 - Certifique-se de que os arquivos de imagem existem
 
+### Como copiar conteúdo dos arquivos .html para WordPress?
+1. Abra o arquivo .html (ex: politicadeprivacidade.html) em um editor de texto
+2. Copie TODO o conteúdo entre as tags `<main>` e `</main>`
+3. No WordPress, ao criar a página, clique nos 3 pontinhos (⋮) no canto superior direito
+4. Escolha "Editor de código" ou "Código HTML"
+5. Cole o conteúdo copiado
+6. Volte para o editor visual se preferir
+7. Salve e publique
+
 ---
 
 ## 📁 Arquivos Criados/Modificados
@@ -125,9 +156,11 @@ Se usar algum plugin de cache:
 
 ## ⚠️ IMPORTANTE
 
-1. **Não delete os arquivos .html** - Eles servem como referência
+1. **Não delete os arquivos .html** - Eles servem como referência para copiar conteúdo
 2. **URLs agora são sem .html** - Ex: `/blog` ao invés de `/blog.html`
 3. **Templates automáticos** - O WordPress detecta automaticamente os templates page-*.php
+4. **Páginas de Políticas** - Use o editor do WordPress, não os arquivos .html diretamente
+5. **Copiar conteúdo HTML** - Ao copiar dos arquivos .html, use o modo "HTML/Código" no editor do WordPress
 
 ---
 
