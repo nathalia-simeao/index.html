@@ -239,5 +239,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     // --- Fim da Lógica para o Efeito Hover nas Letras ---
+
+    // --- Início da Lógica para Contadores Animados ---
+    const animateCounter = (element) => {
+        const target = parseFloat(element.getAttribute('data-target'));
+        const suffix = element.getAttribute('data-suffix') || '';
+        const duration = 2000; // Duração da animação em ms
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                element.textContent = Math.floor(current).toLocaleString('pt-BR') + suffix;
+                requestAnimationFrame(updateCounter);
+            } else {
+                // Formata o número final corretamente
+                if (suffix === '%') {
+                    element.textContent = target + suffix;
+                } else {
+                    element.textContent = Math.floor(target).toLocaleString('pt-BR') + suffix;
+                }
+            }
+        };
+
+        updateCounter();
+    };
+
+    // Intersection Observer para iniciar a animação quando os elementos ficarem visíveis
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                entry.target.classList.add('animated');
+                animateCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Observa todos os elementos com a classe 'counter'
+    document.querySelectorAll('.counter').forEach(counter => {
+        counterObserver.observe(counter);
+    });
+    // --- Fim da Lógica para Contadores Animados ---
 });
 
