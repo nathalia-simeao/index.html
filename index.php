@@ -130,7 +130,7 @@ get_header();
     <div class="product-cards-container">
         
         <div class="product-card">
-            <img src="assets/barra1.jpg" alt="Barras Trefiladas" class="product-img">
+            <img src="https://torcisao.com.br/wp-content/uploads/2025/12/barra1-2-scaled.jpg" alt="Barras Trefiladas" class="product-img">
             <h3 class="product-name">Barras Trefiladas</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -142,7 +142,7 @@ get_header();
         </div>
 
         <div class="product-card">
-            <img src="assets/haste1.jpg" alt="Haste de Aterramento" class="product-img">
+            <img src="https://torcisao.com.br/wp-content/uploads/2025/12/haste1.jpg" alt="Haste de Aterramento" class="product-img">
             <h3 class="product-name">Haste de Aterramento</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -154,7 +154,7 @@ get_header();
         </div>
 
         <div class="product-card">
-            <img src="assets/arame1.jpg" alt="Arames Trefilados" class="product-img">
+            <img src="https://torcisao.com.br/wp-content/uploads/2025/12/arame1.jpg" alt="Arames Trefilados" class="product-img">
             <h3 class="product-name">Arames Trefilados</h3>
             <button 
                 class="btn-saiba-mais" 
@@ -193,10 +193,10 @@ get_header();
         <div class="text-center mb-4">
           <div class="row g-2">
             <div class="col-4">
-              <img id="productImage1" src="assets/barra1.jpg" class="modal-product-img" alt="Imagem do Produto 1">
+              <img id="productImage1" src="https://torcisao.com.br/wp-content/uploads/2025/12/barra1-2-scaled.jpg" class="modal-product-img" alt="Imagem do Produto 1">
             </div>
             <div class="col-4">
-              <img id="productImage2" src="assets/haste1.jpg" class="modal-product-img" alt="Imagem do Produto 2">
+              <img id="productImage2" src="https://torcisao.com.br/wp-content/uploads/2025/12/haste1.jpg" class="modal-product-img" alt="Imagem do Produto 2">
             </div>
             <div class="col-4">
               <img id="productImage3" src="assets/arame4.jpg" class="modal-product-img" alt="Imagem do Produto 3">
@@ -501,7 +501,7 @@ get_header();
                         <div class="form-check mb-4">
                             <input class="form-check-input" type="checkbox" value="" id="politica-privacidade" required>
                             <label class="form-check-label small" for="politica-privacidade">
-                                Eu li e aceito a <a href="politicadeprivacidade.html" class="politica-link">Política de Privacidade</a> e concordo com o tratamento dos meus dados para as finalidades descritas.
+                                Eu li e aceito a <a href="https://torcisao.com.br/politicadeprivacidade/" class="politica-link">Política de Privacidade</a> e concordo com o tratamento dos meus dados para as finalidades descritas.
                             </label>
                         </div>
 
@@ -554,7 +554,7 @@ get_header();
                         
                         <h4 class="footer-column-title-first">Institucional</h4>
                         <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
-                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="https://torcisao.com.br/politicadeprivacidade/">Política de Privacidade</a></li>
                             <li><a href="politicadecookies.html">Política de Cookies</a></li>
                             <li><a href="index.html">Início</a></li>
                             <li><a href="#secao-produtos">Produtos</a></li>

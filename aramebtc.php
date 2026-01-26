@@ -142,7 +142,7 @@
                             <img src="assets/arame2.jpg" class="d-block w-100" alt="Arames - Imagem 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/arame1.jpg" class="d-block w-100" alt="Arames - Imagem 4">
+                            <img src="https://torcisao.com.br/wp-content/uploads/2025/12/arame1.jpg" class="d-block w-100" alt="Arames - Imagem 4">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-aramebtc" data-bs-slide="prev">
@@ -281,7 +281,7 @@
                                     <input class="form-check-input" type="checkbox" value="" id="politica-privacidade"
                                         required>
                                     <label class="form-check-label small" for="politica-privacidade">
-                                        Eu li e aceito a <a href="politicadeprivacidade.html"
+                                        Eu li e aceito a <a href="https://torcisao.com.br/politicadeprivacidade/"
                                             class="politica-link">Política de Privacidade</a> e concordo com o
                                         tratamento dos meus dados para as finalidades descritas.
                                     </label>
@@ -337,7 +337,7 @@
                             <h4 class="footer-column-title-first">Institucional</h4>
                             <ul class="list-unstyled">
                                 <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
-                                <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                                <li><a href="https://torcisao.com.br/politicadeprivacidade/">Política de Privacidade</a></li>
                                 <li><a href="politicadecookies.html">Política de Cookies</a></li>
                                 <li><a href="index.html">Início</a></li>
                                 <li><a href="index.html#secao-produtos">Produtos</a></li>

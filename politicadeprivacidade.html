@@ -618,7 +618,7 @@
                         
                         <h4 class="footer-column-title-first">Institucional</h4>
                         <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
-                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="https://torcisao.com.br/politicadeprivacidade/">Política de Privacidade</a></li>
                             <li><a href="politicadecookies.html">Política de Cookies</a></li>
                             <li><a href="index.html">Início</a></li>
                             <li><a href="index.html#secao-produtos">Produtos</a></li>

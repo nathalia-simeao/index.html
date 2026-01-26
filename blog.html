@@ -126,7 +126,7 @@
                     <h2 class="fw-bold blog-title mb-4">Artigos Mais Recentes</h2> 
                     
                     <article class="card post-card shadow-sm border-0 mb-5 post-destaque">
-                        <img src="assets/barra2.webp" class="card-img-top blog-post-image rounded-top" alt="Imagem do Post sobre Qualidade">
+                        <img src="https://torcisao.com.br/wp-content/uploads/2025/12/barra2-2.webp" class="card-img-top blog-post-image rounded-top" alt="Imagem do Post sobre Qualidade">
                         <div class="card-body">
                             <span class="badge badge-qualidade">QUALIDADE</span>
                             <h3 class="card-title fw-bold post-title mt-2">Como a Política TORCISÃO Garante a Entrega de Produtos Impecáveis</h3>
@@ -156,7 +156,7 @@
                     <article class="card post-card border-0 mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/haste1.jpg" class="img-fluid rounded-start post-thumbnail" alt="Imagem do Post sobre Mercado">
+                                <img src="https://torcisao.com.br/wp-content/uploads/2025/12/haste1.jpg" class="img-fluid rounded-start post-thumbnail" alt="Imagem do Post sobre Mercado">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body py-3">
@@ -216,7 +216,7 @@
                         
                         <h4 class="footer-column-title-first">Institucional</h4>
                         <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
-                            <li><a href="politicadeprivacidade.html">Política de Privacidade</a></li>
+                            <li><a href="https://torcisao.com.br/politicadeprivacidade/">Política de Privacidade</a></li>
                             <li><a href="politicadecookies.html">Política de Cookies</a></li>
                             <li><a href="index.html">Início</a></li>
                             <li><a href="index.html#secao-produtos">Produtos</a></li>
