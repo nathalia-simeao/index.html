@@ -1,6 +1,6 @@
 # Instruções para Configurar o Tema no WordPress
 
-## ✅ Correções Realizadas
+## ✅ Correções Realizadas (Última atualização: 27/01/2026)
 
 ### 1. Cores do Menu - CORRIGIDO ✓
 - Todos os links do menu agora estão em preto (#2C292A)
@@ -18,6 +18,7 @@
 ### 4. Páginas Institucionais - CORRIGIDO ✓
 - Template genérico `page.php` criado
 - Todas as páginas funcionarão automaticamente
+- Arquivos de política refatorados para WordPress
 
 ### 5. Cores dos Botões - VERIFICADO ✓
 - Todos os botões já estavam com texto branco correto
@@ -27,6 +28,66 @@
 - Arquivo `header.php` criado
 - Arquivo `footer.php` criado
 - Todos os templates usam get_header() e get_footer()
+
+### 7. CSS Corrigido ✓
+- Espaço entre cabeçalho e banner eliminado
+- Dropdown do modal posicionado corretamente
+- Compatibilidade com admin bar do WordPress
+
+### 8. Links Corrigidos ✓
+- Todos os links .html substituídos por permalinks WordPress
+- Caminhos de imagem corrigidos
+- JavaScript atualizado para estrutura WordPress
+
+---
+
+## 🎨 PERSONALIZANDO IMAGENS NO WORDPRESS
+
+Você pode trocar as imagens do site diretamente no WordPress, sem mexer em código!
+
+### Como Acessar:
+1. Faça login no WordPress
+2. Vá em **Aparência > Personalizar**
+3. Clique em **"Imagens do Site"**
+
+### Imagens Disponíveis para Trocar:
+
+#### 📸 **Imagem de Fundo do Banner Principal**
+- **Onde aparece:** Banner da página inicial (fundo grande com texto "O aço que move o seu projeto")
+- **Tamanho recomendado:** 1920x1080px
+- **Formato:** JPG ou PNG
+- **Como trocar:**
+  1. Clique em "Selecionar imagem"
+  2. Faça upload da nova imagem ou escolha da biblioteca
+  3. Clique em "Publicar"
+
+#### 🏢 **Logo do Cabeçalho**
+- **Onde aparece:** Topo do site (menu de navegação)
+- **Tamanho recomendado:** 220px de largura
+- **Formato:** PNG (com fundo transparente)
+- **Como trocar:**
+  1. Vá em **Aparência > Personalizar > Identidade do Site**
+  2. Clique em "Selecionar logo"
+  3. Faça upload do novo logo
+  4. Ajuste o tamanho se necessário
+  5. Clique em "Publicar"
+
+**OU use a opção alternativa em "Imagens do Site"**
+
+#### 🔖 **Favicon (Ícone do Site)**
+- **Onde aparece:** Aba do navegador e favoritos
+- **Tamanho recomendado:** 512x512px
+- **Formato:** PNG
+- **Como trocar:**
+  1. Em "Imagens do Site", clique em "Favicon"
+  2. Faça upload da imagem
+  3. Clique em "Publicar"
+
+### 💡 Dicas Importantes:
+- Use imagens de alta qualidade para melhor resultado
+- Formatos JPG são menores (bons para fotos grandes)
+- Formatos PNG preservam transparência (bons para logos)
+- Evite imagens muito pesadas (comprima antes de usar)
 
 ---
 
