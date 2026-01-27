@@ -9,6 +9,14 @@ get_header();
 ?>
 
 <main>
+<?php 
+// Verifica se o Elementor está ativo e se há conteúdo editado no Elementor
+if (class_exists('\Elementor\Plugin') && \Elementor\Plugin::$instance->documents->get(get_the_ID())->is_built_with_elementor()) {
+    // Carrega o conteúdo criado no Elementor
+    echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(get_the_ID());
+} else {
+    // Fallback: mantém o HTML original se não houver conteúdo do Elementor
+    ?>
     <section class="banner-1-section">
         <div class="banner-1-content">
             <h2 class="banner-1-subtitle">O aço que move o seu projeto começa aqui!</h2>
@@ -429,6 +437,7 @@ get_header();
         </p>
     </a>
     </section>
+<?php } // Fim do fallback ?>
 </main>
   
 <footer class="main-footer py-5">
