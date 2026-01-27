@@ -7,111 +7,7 @@
 
 get_header(); 
 ?>
-<!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="torcisão-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="banner1.css">
-    <link rel="stylesheet" href="cabecalho.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="isosection.css">
-    <link rel="stylesheet" href="posfooter.css">
-    <link rel="stylesheet" href="produtos.css">
-    <link rel="stylesheet" href="provasocial.css">
-    <link rel="stylesheet" href="quemsomos.css">
-    <link rel="stylesheet" href="produto.css">
-    <link rel="stylesheet" href="blog.css">
 
-</head>
-<body data-bs-theme="light">
-<header class="container">
-    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
-      <div class="container-fluidnav">
-        <a class="container__navbar-imagem" href="#"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/lgcabecalhoescura220.png" alt="Logo da Torcisão Trefilados"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quem-somos-section">Quem Somos</a>
-              </li>
-             <li class="nav-item dropdown has-submenu"> 
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Produtos
-                </a>
-                
-                <ul class="dropdown-menu">
-                    
-                    <li class="nav-item dropend has-submenu-2">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Barras Trefiladas
-                        </a>
-                        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="barrabtc.html">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="barramtc.html">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="barraatc.html">ATC - Alto Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="barraacoressulfurado.html">Aço Ressulfurado</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropend has-submenu-2">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Arames Trefilados
-                        </a>
-                        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="aramebtc.html">BTC - Baixo Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="aramemtc.html">MTC - Médio Teor de Carbono</a></li>
-                            <li><a class="dropdown-item" href="arameatc.html">ATC - Alto Teor de Carbono</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropend has-submenu-2">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Haste de Aterramento
-                        </a>
-                        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="hastebc.html">Baixa Camada</a></li>
-                            <li><a class="dropdown-item" href="hasteac.html">Alta Camada</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
-                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
-                  </div></a>
-              </li>
-          </div>
-        </div>
-      </div>
-    </nav>
-</header> -->
 <main>
     <section class="banner-1-section">
         <div class="banner-1-content">
@@ -553,12 +449,12 @@ get_header();
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
                         
                         <h4 class="footer-column-title-first">Institucional</h4>
-                        <ul class="list-unstyled"> <li><a href="politicadequalidade.html">Política de Qualidade</a></li>
-                            <li><a href="https://torcisao.com.br/politicadeprivacidade/">Política de Privacidade</a></li>
-                            <li><a href="politicadecookies.html">Política de Cookies</a></li>
-                            <li><a href="index.html">Início</a></li>
+                        <ul class="list-unstyled"> <li><a href="<?php echo home_url('/politicadequalidade'); ?>">Política de Qualidade</a></li>
+                            <li><a href="<?php echo home_url('/politicadeprivacidade'); ?>">Política de Privacidade</a></li>
+                            <li><a href="<?php echo home_url('/politicadecookies'); ?>">Política de Cookies</a></li>
+                            <li><a href="<?php echo home_url(); ?>">Início</a></li>
                             <li><a href="#secao-produtos">Produtos</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="<?php echo home_url('/blog'); ?>">Blog</a></li>
                         </ul>
                     </div>
 

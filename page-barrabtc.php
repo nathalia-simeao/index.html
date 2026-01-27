@@ -29,10 +29,10 @@ get_header();
                     <img src="https://torcisao.com.br/wp-content/uploads/2025/12/barra3.jpg" class="d-block w-100" alt="Barras Trefiladas - Imagem 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/https://torcisao.com.br/wp-content/uploads/2025/12/barra2-2.webp" class="d-block w-100" alt="Barras Trefiladas - Imagem 3">
+                    <img src="https://torcisao.com.br/wp-content/uploads/2025/12/barra2-2.webp" class="d-block w-100" alt="Barras Trefiladas - Imagem 3">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/https://torcisao.com.br/wp-content/uploads/2025/12/barra1-2-scaled.jpg" class="d-block w-100" alt="Barras Trefiladas - Imagem 4">
+                    <img src="https://torcisao.com.br/wp-content/uploads/2025/12/barra1-2-scaled.jpg" class="d-block w-100" alt="Barras Trefiladas - Imagem 4">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-barrabtc" data-bs-slide="prev">

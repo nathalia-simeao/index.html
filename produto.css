@@ -24,6 +24,46 @@ main {
     height: auto;
 }
 
+/* Dropdown do modal - posicionamento fixo */
+.modal-body .dropdown {
+    position: relative;
+}
+
+.modal-body .dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    z-index: 1000;
+    min-width: 100%;
+    margin-top: 0.125rem;
+}
+
+/* Força o dropdown a abrir sempre abaixo do botão */
+.modal-body .dropdown-menu.show {
+    display: block;
+    position: absolute !important;
+    inset: auto auto auto 0px !important;
+    transform: translate(0px, 38px) !important;
+}
+
+/* Botão do dropdown do modal */
+.btn-torcisao-dropdown {
+    width: 100%;
+    text-align: left;
+    background-color: var(--cor-decoracao-laranja) !important;
+    border-color: var(--cor-decoracao-laranja) !important;
+    color: var(--cor-neutra-branco) !important;
+    position: relative;
+}
+
+.btn-torcisao-dropdown:hover {
+    background-color: #d96a2d !important;
+    border-color: #d96a2d !important;
+}
+
 h1.product-main-title {
     color: var(--cor-decoracao-laranja) !important;
     font-size: 1.75rem !important;

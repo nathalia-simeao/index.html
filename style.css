@@ -46,7 +46,19 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding: 0;
+    padding-top: 0 !important;
     width: 100%;
+}
+
+/* Ajuste específico para WordPress admin bar */
+body.admin-bar .navbar-expand-lg {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar .navbar-expand-lg {
+        top: 46px;
+    }
 }
 
 input[type=checkbox] {
